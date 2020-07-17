@@ -61,7 +61,7 @@ position:relative;
 `
 
 
-const projects = [1,2]
+
 class Articles extends React.Component{
   constructor(props) {
     super(props);
@@ -111,13 +111,7 @@ class Articles extends React.Component{
                 )
               })
               }
-              {/* {projects.map((d)=>{
-                return (
-                  <div>
-                    <H>{d}</H>
-                  </div>
-                )
-              })} */}
+          
             </Slider>
             </Container>
         </Box>
