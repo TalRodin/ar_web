@@ -20,12 +20,14 @@ const Wrapper=styled.div`
   background: radial-gradient(#4c4f5a 6%, transparent 6%), #18191c;
 `
 const App=()=> {
+  console.log(this)
   return (
     <Layout>
         <Switch>
             <Route exact path='/' component={HomeStart}></Route>
             <Route exact path='/projects' component={Projects}></Route>  
-            <Route path='/projects/:id(\d+)' component={SeeSingleProject}></Route> 
+            <Route path='/projects/:id(\d+)' component={SeeSingleProject}
+            ></Route> 
         </Switch>
     </Layout> 
   );
