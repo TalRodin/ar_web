@@ -10,8 +10,8 @@ const Wrap=styled.div`
 `
 const Box = styled.div`
       background: #171e22;
-      margin: 3%;
-      height: 90%;
+      margin:2%;
+      height: 98%;
       border-radius:3px; 
       
 `
@@ -23,7 +23,7 @@ const BoxWrapper=styled.div`
         position:absolute;
         color: #d8f8ff;
         left:30%;
-        transform: rotate(5deg);
+        transform: rotate(1deg);
         text-align:center;
         width:20%;
         padding: 1rem 2.5rem 1rem 2.5rem;

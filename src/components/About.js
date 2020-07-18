@@ -24,9 +24,9 @@ const H6 =  styled.span`
   margin-bottom:5%;
   font-family: 'Nothing You Could Do', cursive;
   transform: rotate(-1.5deg);
-  line-height: 1.8;
+  line-height: 2.5;
   letter-spacing: 2px;
-  
+  transform: rotate(1deg);
 `
 
 function About() {

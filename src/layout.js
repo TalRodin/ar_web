@@ -16,17 +16,6 @@ const Layout = ({children}) =>(
      
     <>
        <Wrapper>
-       
-            {/* <Logo />
-            <Navigation />
-            <Home />
-            <About />
-            <Articles />
-            <LinkToProjects />
-            <OpenSource />
-            <Contact /> */}
-            
-            
             <div>
                 {children}
             </div>

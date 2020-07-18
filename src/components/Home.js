@@ -20,7 +20,7 @@ const H1=styled.h1`
     font-size: 1.5rem;
     line-height: 1.5rem;
     // background: linear-gradient(to bottom right,#E0AA3E, #F9F295,#E0AA3E,#B88A44);
-    background:#f1555a;
+    background:#364650;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 `

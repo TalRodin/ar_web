@@ -11,19 +11,21 @@ const Container =styled.ul`
 `
 const Body = styled.div`
     position:absolute;
-    margin-left: 86%;
+    margin-left: 88%;
     margin-top: 20%;
     display: block;
 `
 const Wrapper=styled.li`
     margin: 8px 0;
-    
+    cursor: pointer;
 `
 const A=styled.a`
     font-size: small;
 `
 const Input=styled.input`
-    height:10px; width:10px;
+    height:6px; 
+    width:6px;
+    
 `
 
 class Navigation extends React.Component{
@@ -58,7 +60,7 @@ class Navigation extends React.Component{
                             spy={true}
                             smooth={true}
                             hashSpy={true}
-                            offset={-30}
+                            offset={-10}
                             duration={400}
                             delay={1000}
                             isDynamic={true}
@@ -131,7 +133,7 @@ class Navigation extends React.Component{
                         >
                             <div class="indicator"></div>
                             
-                            <A>Open Source Projects</A>
+                            <A>Open Source</A>
                             <Input class="state" type="radio" name="app" id="e" value="e"/>
                         </Link>
                         </Wrapper>
