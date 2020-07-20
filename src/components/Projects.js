@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import NavToProject from './NavToProject'
 import ItemToProject from './ItemToProject'
 import style from 'styled-components'
-import {db,auth} from '../Firebase'
+import {db} from '../Firebase'
 import SingleProject from './SingleProject'
 
 const Wrap = style.div`
@@ -24,8 +24,10 @@ class Projects extends React.Component{
         snapshot.forEach(doc=>{
           console.log(doc)
           const data=doc.data()
+          if (data.os==='no'){
+            projects.push(data)
+          }
           
-          projects.push(data)
         })
       this.setState({projects:projects})
       }).catch(error => console.log(error))

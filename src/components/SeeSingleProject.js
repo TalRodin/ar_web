@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components'
 import {db} from '../Firebase'
 import Video from './Video'
-
+import Photos from './Photos'
 
 class SeeSingleProject extends React.Component{
     state={
@@ -37,7 +37,7 @@ class SeeSingleProject extends React.Component{
                     return (<div key={p.id}>
                     {p.url}
                     <Video key={p.id} project={p.url} />
-                    
+                    <Photos key={p.id} />
                     </div>)
                 })}
             

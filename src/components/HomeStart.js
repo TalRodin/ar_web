@@ -10,7 +10,7 @@ import Home from './Home'
 import Logo from '/Users/alyonarodin/Desktop/ar_website/my-app/src/svg.js'
 
 const Wrapper=styled.div`
-  background-color: #f8f8f8;;
+  background-color: #fbfbfb;
 `
 const HomeStart=()=> {
   return (
