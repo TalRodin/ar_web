@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
-
+import { device } from '../device';
 
 const Wrap=styled.div`
     height: 100vh; 
@@ -19,34 +19,47 @@ const Box = styled.div`
       left:20%;
       top: 10%;
       transform: rotate(-0.25deg);
+      @media ${device.tablet} { 
+        transform: rotate(90deg);
+        background-size: 100% 100%;
+        height: 64%;
+        width: 78%;
+            }
       
 `
 const Box2 = styled.div`
 // linear-gradient( rgba(38,40,43, 0.9), rgba(38,40,43, 1)),
       position:relative;     
-      background: url('brik.png');
+      background: url('break.png');
       height: 88.9%;
+      object-fit: cover;
       top:31px;
       margin-left:10.7%;
       margin-right:10.7%;
       border: 1px solid black;
-      
+      @media ${device.tablet} { 
+        transform: rotate(-90deg);
+        height: 99%;
+        width: 68%;
+        top
+        object-fit: cover;
+        position:relative; 
+        margin-left:10.7%;
+        margin-right:10.7%; 
+       
+            }
 `
 
-const BoxWrapper=styled.div`
-        
-        top:10%;
-        
+const BoxWrapper=styled.div`       
+        top:10%;     
         position:relative;
         color: #d8f8ff;
         left:30%;
         transform: rotate(2deg);
         text-align:center;
-        
-        width:25%;
-        height: 10%;
+        width:40%;
+        height: 25%;
         padding: 1rem 2.5rem 1rem 2.5rem;
-       
         box-shadow:
           0 0 0.1vw  0.2vw #f7f9ff,   
           0 0 0.4vw  0.6vw #72a4e9, 
@@ -72,12 +85,12 @@ const Container = styled.div`
     margin: 0 auto;
     padding: 0px 40px 40px 40px;
     width: 300px;
-    top:20%;
+    top:5%;
     position:relative;
     border-radius: 35px;
     // background-color: #26282B;
     background-color: transparent;
-    box-shadow: 0 0 6px 6px #26282B, 12px 12px 16px 8px rgba(2, 2, 2, 0.7), -12px -12px 16px 8px rgba(27, 27, 27, 0.7);
+    box-shadow: 0 0 2px 2px #26282B, 12px 12px 16px 8px rgba(2, 2, 2, 0.7), -12px -12px 16px 8px rgba(27, 27, 27, 0.7);
 `
 const H = styled.h3`
     color: #fff;
