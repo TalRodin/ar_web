@@ -7,7 +7,7 @@ const Wrap=styled.div`
 `
 const Box = styled.div`
       // padding: 48px 64px;
-      background: #171e22;
+      background: #fbfbfb;
       margin: 3%;
       height: 90%;
       border-radius:3px;

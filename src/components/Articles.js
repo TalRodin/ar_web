@@ -74,6 +74,7 @@ const BoxWrapper=styled.div`
           inset 0 0 0.4vw  0.2vw #72a4e9,
           inset 0 0 0.5vw  0.2vw #f7f9ff;
           border-radius: 1.5rem;
+         
 `
 const H5=styled.h5`
         position: relative;
@@ -81,7 +82,8 @@ const H5=styled.h5`
         margin-top:8%;
         font-size:40px;
         font-family:'Quicksand'; 
-        letter-spacing: 10px;        
+        letter-spacing: 10px; 
+             
         text-shadow: 0 0 20px #f7f9ff, 0 0 30px #f7f9ff, 0 0 40px #72a4e9, 0 0 70px #72a4e9, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
         @media ${device.tablet} { 
           font-size:20px;
