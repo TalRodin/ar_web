@@ -14,6 +14,7 @@ import HomeStart from './components/HomeStart'
 import Projects from './components/Projects'
 import Layout from './layout'
 import SeeSingleProject from './components/SeeSingleProject'
+import OSsingleProjectSee from './components/OSsingleProjectSee'
 const Wrapper=styled.div`
   color: #7a7a8c;
   background-color: #1d1e22;
@@ -26,8 +27,8 @@ const App=()=> {
         <Switch>
             <Route exact path='/' component={HomeStart}></Route>
             <Route exact path='/projects' component={Projects}></Route>  
-            <Route path='/projects/:id(\d+)' component={SeeSingleProject}
-            ></Route> 
+            <Route path='/projects/:id(\d+)' component={SeeSingleProject}></Route> 
+            <Route path='/os' component={OSsingleProjectSee}></Route> 
         </Switch>
     </Layout> 
   );

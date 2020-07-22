@@ -12,20 +12,56 @@ const Container =styled.ul`
         display: flex;
         flex-direction:row;
         text-align:center;
-        
-        
+        }
+    @media only screen and (max-width: 1040px) {
+            display: flex;
+            flex-direction:row;
+            text-align:center;
             }
 `
 const Body = styled.div`
     position:absolute;
     margin-left: 88%;
     margin-top: 20%;
+    
     @media ${device.tablet} { 
-        margin-left: 20%;
+        margin-left: 27%;
         margin-top:0%;
         position:relative;
-        
             }
+    @media only screen and (max-width: 1040px) {
+        margin-left: 27%;
+        margin-top:0%;
+        position:relative;
+                }
+    @media only screen and (max-width: 785px) {
+        margin-left: 27%;
+        margin-top:0%;
+        position:relative; }
+    @media only screen and (max-width: 740px) {
+            margin-left: 20%;
+            margin-top:0%;
+            position:relative; }
+    @media only screen and (max-width: 700px) {
+        margin-left: 23%;
+        margin-top:0%;
+        position:relative; }
+    @media only screen and (max-width: 660px) {
+        margin-left: 20%;
+        margin-top:0%;
+        position:relative; }
+    @media only screen and (max-width: 600px) {
+        margin-left: 18%;
+        margin-top:0%;
+        position:relative; }
+    @media only screen and (max-width: 560px) {
+        margin-left: 16%;
+        margin-top:0%;
+        position:relative; }
+    @media only screen and (max-width: 530px) {
+        margin-left: 15%;
+        margin-top:0%;
+        position:relative; }
 `
 const Wrapper=styled.li`
     margin: 8px 0;
@@ -34,13 +70,23 @@ const Wrapper=styled.li`
 `
 const A=styled.a`
     font-size: small;
-    font-family: 'Nothing You Could Do', cursive;
+    font-family: 'Lato', sans-serif;
+    // font-family: 'Nothing You Could Do', cursive;
     padding:5px;
+    @media only screen and (max-width: 700px) {
+        font-size: 10px;}
+    @media only screen and (max-width: 660px) {
+        font-size: 10px;}
+    @media only screen and (max-width: 600px) {
+        font-size: 10px;}
+    @media only screen and (max-width: 560px) {
+        font-size: 10px;}
+    @media only screen and (max-width: 530px) {
+        font-size: 10px;}
 `
 const Input=styled.input`
     height:6px; 
-    width:6px;
-    
+    width:6px;   
 `
 
 
@@ -139,7 +185,7 @@ class Navigation extends React.Component{
                             spy={true}
                             smooth={true}
                             hashSpy={true}
-                            offset={-30}
+                            offset={-100}
                             duration={400}
                             delay={1000}
                             isDynamic={true}

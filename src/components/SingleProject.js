@@ -3,7 +3,14 @@ import styled from 'styled-components'
 // import SeeSingleProject from './SeeSingleProject'
 import {Link} from 'react-router-dom'
 
+const A=styled.a`
+    
+    padding-left:2%;
+    padding-top:2%;
+    margin:2%;
+    color:#1a1b1d;
 
+`
 
 const Card = styled.div`
         background-color: #fbfbfb;
@@ -12,44 +19,38 @@ const Card = styled.div`
         border-radius: 35px;
         width: max-content;
         display: grid;
-        margin: 2rem;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        grid-gap: 1rem;
+        grid-template-columns: 1fr 1fr ;
+ 
 `
-// const Span = styled.span`
-//         width: 25%
-// `
-// const Meter =styled.div`
-// height: 20px;  /* Can be anything */
-// 	position: relative;
-// 	background: #555;
-// 	-moz-border-radius: 25px;
-// 	-webkit-border-radius: 25px;
-// 	border-radius: 25px;
-// 	padding: 10px;
-// 	box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
-//`
+const P = styled.p`
+ margin-left:5%;
+ 
+`
+
 const SingleProject =(props)=>{
         console.log(props)
         return (
             <Card>
-               <img src={`${props.project.thumbnail}`} width='200px' height='200px'/>
-              {props.project.title}
+              
+               <img src={`${props.project.thumbnail}`} width='200px' height='200px' border-radius='25px'/>
+               <div>
+               <P>
+              {props.project.title}</P>
+              <P>
               <Link to={{
                   pathname: `/projects/${props.project.id}`
-                  
-                  }}>More Details
+                  }}>
+                   <A cursor='pointer'><i class="fa fa-info" aria-hidden="true"></i></A>
               </Link>
-              <a href={`${props.project.github}`}>Github</a>
+             
+              <A href={`${props.project.github}`} cursor='pointer' class="icon-link" title="Follow us on Github"><i class="fab  fa-github"></i></A>
+              </P>
+              <P>
               <progress  className="progress-bar" value={`${props.project.size}`} max='5'></progress>
-              {/* <div class="w3-border">
-                <Bar class="w3-grey" ></Bar>
-              </div> */}
-              {/* <Meter>
-                <Span ></Span>
-              </Meter> */}
+              </P>
+              </div>
 
-
+              
             </Card>
         )
     }

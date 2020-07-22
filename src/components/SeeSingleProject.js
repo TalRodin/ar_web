@@ -4,7 +4,7 @@ import {db} from '../Firebase'
 import Video from './Video'
 import Photos from './Photos'
 import ItemToProject from './ItemToProject'
-import sample from './video.mp4';
+
 const Arrow=styled.div`   
       margin-left: 2%;
 `
@@ -19,10 +19,27 @@ const L=styled.h6`
 `
 
 const Box = styled.div`
-        width: auto;
-        height: 400px;
+        
+        
+`
+const B = styled.div`
+     background: #f8f8f8;
+     height: 100vh;
+     width: auto;
 `
 
+const P = styled.p`
+     width:40%;
+     float:right;
+     position:relative;
+     margin-right:12%;
+     margin-left: 0%;
+     line-height: 20px;
+     font-size:14px;
+     @import url('https://fonts.googleapis.com/css?family=Lato');
+     font-family: 'Lato', sans-serif;
+     letter-spacing: 1px;
+`
 
 class SeeSingleProject extends React.Component{
     state={
@@ -52,8 +69,11 @@ class SeeSingleProject extends React.Component{
         const projects=this.state
         console.log(projects)
         return (
-        <div>
+        <B>
                 
+            
+            
+         
             <L>Home</L>
             <ItemToProject link='/' >
                         <Arrow>
@@ -61,22 +81,19 @@ class SeeSingleProject extends React.Component{
                             </style><g><path class="st0" d="M6.1,50.1c6.3,3.6,12.3,7.5,17.6,12.5c4.9,4.6,7.6,10.4,12,15.3c1.6,1.8,5.6,1.1,5.9-1.6   c1.3-9.7-6.1-18.4-14.7-25.3c18.5,0.4,37,1.4,55.4,2.4c8.4,0.4,8.3-12.6,0-13c-18.5-1-37.1-1.8-55.6-1.3c6.6-7,11.8-15.9,14.1-24.1   c1.1-3.7-3.7-5.1-5.8-2.4c-3.9,5.1-7.6,10.5-12,15.1c-5,5.3-10.8,9-16.9,12.9c-2.2,1.4-2.9,3.4-2.6,5.2C3.4,47.5,4.2,49.1,6.1,50.1   z"/></g></svg>
                         </Arrow>
             </ItemToProject>
-            <video autoplay loop muted poster="http">
-                <source src={sample} type='video/mp4'/>
-            </video>
-            <Box>
                 {this.state.projects && this.state.projects.map(p=>{
-                    return (<div key={p.id}>
+                    return (<Box key={p.id}>
                         <div>
+                             <P>{p.about}</P>
                             <Video key={p.id} project={p.url} />
                         </div>
-                        <div>
-                            <Photos key={p.id} />
-                        </div>
-                    </div>)
+                        
+                        <Photos key={p.id} project={p.images}/>
+                        
+                    </Box>)
                 })}
-            </Box>
-        </div>
+        
+        </B>
       );
     }
 }   

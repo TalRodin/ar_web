@@ -5,48 +5,73 @@ import 'slick-carousel/slick/slick.css';
 import styled from 'styled-components'
 
 const Container = styled.div`
-    margin: 0 auto;
-    padding: 0px 40px 40px 40px;
-    width: 500px;
-    top:30%;
-    position:relative;
+margin: 0 auto;
+// padding: 0px 20px 20px 20px;
+width: 1200px;
+// height: 180px;
+// top:20%;
+margin-top:3%;
+// position:relative;
+// border-radius: 35px;
 `
 
-const H = styled.h3`
-background: #171e22;
-color: #fff;
-font-size:8px;
-line-height: 280px;
-text-align: center; 
-position:relative;
+const Border = styled.div`
+padding-left:10%
+
 `
-const photos=[1,2,3,4,5,6]
+
+
 export default class Photos extends Component {
     render() {
-      const settings = {
+      console.log(this.props.project)
+      var settings = {
+        
         dots: true,
-        infinite: true,
-        slidesToShow: 3,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 4,
         slidesToScroll: 1,
-        vertical: true,
-        verticalSwiping: true,
-        beforeChange: function(currentSlide, nextSlide) {
-          console.log("before change", currentSlide, nextSlide);
-        },
-        afterChange: function(currentSlide) {
-          console.log("after change", currentSlide);
-        }
+        initialSlide: 0,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              initialSlide: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
       };
       return (
+        
         <div>
           <Container>
           <Slider {...settings}>
           
-               {photos.map(p=>{
+               {this.props.project.map(p=>{
                    return (
-                       <H>
-                           {p}
-                       </H>
+                    
+                         <Border >
+                         <img src={`${p}`} width='220px' height='160px'  />
+                         </Border>
+                      
                    )
                })}
           

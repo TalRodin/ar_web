@@ -1,16 +1,24 @@
 import React from 'react';
 import styled from 'styled-components'
 import {db} from '../Firebase'
-import SingleProject from './SingleProject'
+import SingleProjectOS from './SingleProjectOS'
+import sample from './video.mp4';
 const Wrap=styled.div`
     height: 100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    // align-items:center;
 `
 const Box = styled.div`
-      // padding: 48px 64px;
-      background: #fbfbfb;
       margin: 3%;
       height: 90%;
-      border-radius:3px;
+      border-radius:3px; 
+      position:absolute;
+`
+const V = styled.div`
+      position:relative;
+
 `
 class OpenSource extends React.Component{
     state={
@@ -38,9 +46,13 @@ render() {
     console.log(projects)
   return (
     <Wrap id='opensource'>
+      <V> <video  loop muted poster="http" autoPlay width='900' height='400'>
+                                <source src={sample} type='video/mp4'/>
+                            </video>
+      </V>
        <Box>
        {this.state.projects && this.state.projects.map(project=>{
-         return <SingleProject key={project.id} project={project} />
+         return <SingleProjectOS key={project.id} project={project} />
        })}
       </Box>
     </Wrap>
