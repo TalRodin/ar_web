@@ -49,10 +49,10 @@ function About() {
   return (
     <div id = 'about'>
     <Wrap >
-      {/* <Box> */}
+
         <SVGPic/>
         <H6><Typing /></H6>
-      {/* </Box> */}
+
     </Wrap>
     </div>
   );
