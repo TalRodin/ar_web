@@ -2,7 +2,6 @@ import React from 'react'
 import { Link} from 'react-scroll'
 import styled from 'styled-components'
 import { device } from '../device';
-import '/Users/alyonarodin/Desktop/ar_website/my-app/src/App.css'
 
 const Container =styled.ul`
     text-align:right;

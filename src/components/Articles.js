@@ -4,7 +4,6 @@ import Slider from "react-slick";
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
 import { device } from '../device';
-import '/Users/alyonarodin/Desktop/ar_website/my-app/src/App.css'
 const Wrap=styled.div`
     height: 100vh; 
     

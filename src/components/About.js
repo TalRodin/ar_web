@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components'
-import SVGPic from '/Users/alyonarodin/Desktop/ar_website/my-app/src/svg_girl.js'
+import SVGPic from './svg_girl'
 import Typing from './Typing'
 import { device } from '../device';
 const Wrap=styled.div`

@@ -7,7 +7,7 @@ import LinkToProjects from '../src/components/LinkToProjects'
 import OpenSource from '../src/components/OpenSource'
 import Contact from '../src/components/Contact'
 import Home from '../src/components/Home'
-import Logo from '/Users/alyonarodin/Desktop/ar_website/my-app/src/svg.js'
+import Logo from './components/svg'
 import NavToProject from '../src/components/NavToProject'
 const Wrapper=styled.div`
   background-color: #fff;
