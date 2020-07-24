@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const V = styled.div`
     margin-left: 9%;
-
+    padding:-3%;
 `
 
 const style = {
@@ -12,7 +12,7 @@ const style = {
     top: '0',
     left: '0',
     right: '0'
-
+    
   };
 
 function Video(props){

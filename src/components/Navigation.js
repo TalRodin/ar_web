@@ -87,7 +87,23 @@ const Input=styled.input`
     height:6px; 
     width:6px;   
 `
-
+const B=styled.div`
+width: 3px;
+height: 3px;
+margin:1%;
+cursor: pointer;
+float:right;
+padding:1%;
+border-radius: 50px;
+background-color: #fbfbfb;
+box-shadow: 0 0 6px 6px #fbfbfb, 12px 12px 16px 8px rgba(136, 136, 136, 0.7), -12px -12px 16px 8px rgba(244, 244, 244, 0.7);
+&:hover {
+  box-shadow: -2px -2px 5px rgba(0,0,0,0.7), 2px 2px 5px rgba(255,255,255,0.1);
+  
+}
+&:active {
+  box-shadow: inset 5px 5px 10px rgba(0,0,0,0.7) , inset -5px -5px 10px rgba(255,255,255,0.1);
+`
 
 class Navigation extends React.Component{
     render(){
@@ -111,6 +127,7 @@ class Navigation extends React.Component{
                             <div class="indicator"></div>
                             
                             <A>Home</A>
+                            {/* <B></B> */}
                             {/* <Input class="state" type="radio" name="app" id="a" value="a"/> */}
                         </Link>
                         </Wrapper>
@@ -132,6 +149,7 @@ class Navigation extends React.Component{
                             <div class="indicator"></div>
                             
                             <A>About</A>
+                            
                             {/* <Input class="state" type="radio" name="app" id="b" value="b"/> */}
                         </Link>
                         </Wrapper>
