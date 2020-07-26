@@ -4,10 +4,11 @@ import SVGPic from './svg_girl'
 import Typing from './Typing'
 import { device } from '../device';
 const Wrap=styled.div`
-    height: 100vh;
+    height: 60vh;
     width:auto;
+    background-color:#f3f3f5;
     @media ${device.tablet} { 
-      height: 200vh;
+      height: 60vh;
           }
 `
 const Box = styled.div`
@@ -20,14 +21,13 @@ const Box = styled.div`
 
 const H6 =  styled.span`
   // color:#414141;
-  background: url(https://i.pinimg.com/564x/71/b0/ba/71b0baa434a3674f44e15e4ae599ae0c.jpg);
+  background: #26282a;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
   position: absolute;
   // display: inline-block;
-  width: 40%;
-  margin-left:-10%;
+  width: 70%;
+  margin-left: 10%;
   margin-right: 5%;
   margin-top: 5%;
   margin-bottom:5%;
@@ -36,6 +36,7 @@ const H6 =  styled.span`
   line-height: 2.5;
   letter-spacing: 2px;
   font-size: medium;
+  float:left;
   @media ${device.tablet} { 
     display: flex;
     flex-direction: column;
@@ -49,10 +50,8 @@ function About() {
   return (
     <div id = 'about'>
     <Wrap >
-
-        <SVGPic/>
         <H6><Typing /></H6>
-
+        <SVGPic/>
     </Wrap>
     </div>
   );

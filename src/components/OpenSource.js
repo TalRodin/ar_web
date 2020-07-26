@@ -11,15 +11,17 @@ const Wrap=styled.div`
     // align-items:center;
 `
 const Box = styled.div`
-      margin: 3%;
-      height: 90%;
+      margin: 11%;
+      height: 50%;
+      
       border-radius:3px; 
       position:absolute;
 `
 const V = styled.div`
       position:relative;
-
+      margin-top:10%;
 `
+
 class OpenSource extends React.Component{
     state={
     projects:null
@@ -46,15 +48,18 @@ render() {
     console.log(projects)
   return (
     <Wrap id='opensource'>
-      <V> <video  loop muted poster="http" autoPlay width='900' height='400'>
+      <V> <video  loop muted poster="http" autoPlay width='750' height='350'>
                                 <source src={sample} type='video/mp4'/>
                             </video>
+                   
       </V>
        <Box>
        {this.state.projects && this.state.projects.map(project=>{
          return <SingleProjectOS key={project.id} project={project} />
        })}
       </Box>
+
+  
     </Wrap>
   );
 }

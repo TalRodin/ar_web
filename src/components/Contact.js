@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const Wrap=styled.div`
     height: 30vh;
     width:auto;
-    background: #26282a;
+    background: #343434;
     vertical-align: top;
     padding-top:10px;
 `
@@ -34,12 +34,8 @@ const B = styled.div`
     float:left;
     padding:1%;
     border-radius: 50px;
-    background-color: #26282a;
-    box-shadow: 0 0 4px 4px #26282a, 10px 10px 16px 6px rgba(2, 2, 2, 0.7), -10px -10px 16px 6px rgba(27, 27, 27, 0.7);
-    &:hover {
-      box-shadow: -2px -2px 5px rgba(0,0,0,0.7), 2px 2px 5px rgba(255,255,255,0.1);
-      
-    }
+    background-color: #343434;
+    box-shadow: -2px -2px 5px rgba(0,0,0,0.7), 2px 2px 5px rgba(255,255,255,0.1);
     &:active {
       box-shadow: inset 5px 5px 10px rgba(0,0,0,0.7) , inset -5px -5px 10px rgba(255,255,255,0.1);
 `

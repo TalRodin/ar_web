@@ -17,8 +17,8 @@ const Container = styled.div`
     top:20%;
     position:relative;
     border-radius: 35px;
-    // background-color: #26282B;
-    background-color: transparent;
+    background-color: #fbfbfb;
+    // background-color: transparent;
     box-shadow: 0 0 6px 6px #fbfbfb, 12px 12px 16px 8px rgba(136, 136, 136, 0.7), -12px -12px 16px 8px rgba(244, 244, 244, 0.7);
     animation: moveInBottom 9s ease-out;
     @media ${device.tablet} {
@@ -35,7 +35,7 @@ const Container = styled.div`
     `
 const H = styled.h3`
     color: #1a1b1d;
-    font-size:28px;
+    font-size:24px;
     line-height: 28px;
     text-align: center;
     font-weight: normal;
@@ -73,7 +73,7 @@ const Keywords= styled.div`
 `
 const S=styled.svg`
      &:hover{
-      fill:#9c4a53;   
+      fill:#4b230b;   
  }
     margin-left:50%;
     transform: translate(-50%, -50%);
@@ -93,10 +93,12 @@ const S=styled.svg`
          }
 `
 const I = styled.img`
-    margin-top:2%;
+    margin-top:5%;
     position:absolute;
-    left:15%;
-    opacity:0.8;
+    left:40%;
+    opacity:1;
+    border-radius:30% 70% 70% 30% / 30% 30% 70% 70%;
+    transform: rotate(50deg);
 `
 
 class Articles extends React.Component{
@@ -129,9 +131,8 @@ class Articles extends React.Component{
     };
     return (
       <Wrap id='articles'>
-        <I src='roseb.png' width='550px' height='550px'/>
+     
             <Container  >
-            
             <Slider {...settings} >
               {!data ? console.log(false) : data.map((d)=>{
                 return (
@@ -144,7 +145,7 @@ class Articles extends React.Component{
                       })}</p>
                     </Keywords>
                       <a href={`${d.link}`}>
-                        <S width='60' height='60'  fill='#ad8781' viewBox="0 0 64 64"><title/><path d="M60.72,16.32l0,0a1,1,0,0,0-.17-.13l-.05,0L44,7.9a3,3,0,0,0-3.86,1L29,26.17l-6.14-9.7a1,1,0,0,0-.13-.17h0l0,0h0a1,1,0,0,0-.27-.18L7.34,8.55A3,3,0,0,0,3,11.24V46.76a3,3,0,0,0,1.66,2.68l14,7A3,3,0,0,0,23,53.76V39.12L56.63,56.39A3,3,0,0,0,61,53.72V17A1,1,0,0,0,60.72,16.32ZM21,53.76a1,1,0,0,1-1.45.89l-14-7A1,1,0,0,1,5,46.76V11.24a1,1,0,0,1,.47-.85A1,1,0,0,1,6,10.23a1,1,0,0,1,.44.11L21,17.62Zm2-16.87V20.45L38.42,44.79ZM30.17,28,41.86,10a1,1,0,0,1,1.29-.35L58.56,17.4,41,45.13ZM59,53.72a1,1,0,0,1-1.46.89L42.31,46.79,59,20.45Z"/></S>
+                        <S width='60' height='60'  fill='#5c404b' viewBox="0 0 64 64"><title/><path d="M60.72,16.32l0,0a1,1,0,0,0-.17-.13l-.05,0L44,7.9a3,3,0,0,0-3.86,1L29,26.17l-6.14-9.7a1,1,0,0,0-.13-.17h0l0,0h0a1,1,0,0,0-.27-.18L7.34,8.55A3,3,0,0,0,3,11.24V46.76a3,3,0,0,0,1.66,2.68l14,7A3,3,0,0,0,23,53.76V39.12L56.63,56.39A3,3,0,0,0,61,53.72V17A1,1,0,0,0,60.72,16.32ZM21,53.76a1,1,0,0,1-1.45.89l-14-7A1,1,0,0,1,5,46.76V11.24a1,1,0,0,1,.47-.85A1,1,0,0,1,6,10.23a1,1,0,0,1,.44.11L21,17.62Zm2-16.87V20.45L38.42,44.79ZM30.17,28,41.86,10a1,1,0,0,1,1.29-.35L58.56,17.4,41,45.13ZM59,53.72a1,1,0,0,1-1.46.89L42.31,46.79,59,20.45Z"/></S>
                       </a>
                   </div>
                 )

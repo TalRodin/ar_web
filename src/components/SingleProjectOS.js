@@ -20,10 +20,12 @@ const Card = styled.div`
         box-shadow: 0 0 3px 3px  #fbfbfb, 12px 12px 16px 8px rgba(136, 136, 136, 0.5), -12px -12px 16px 8px rgba(244, 244, 244, 0.5);
         padding: 25px;
         border-radius: 35px;
-        width: max-content;
+        width:max-content;
+        
+        // height:
         display: grid;
         grid-template-columns: 1fr 1fr ;
-
+        
  
 `
 const P = styled.p`
@@ -37,9 +39,7 @@ const I = styled.img`
 const SingleProjectOS =(props)=>{
         console.log(props)
         return (
-            <div>
-                
-                           
+             
             <Card>
               
                         <I src={`${props.project.thumbnail}`} width='200px'  height='200px' border-radius='25px'/>
@@ -62,7 +62,7 @@ const SingleProjectOS =(props)=>{
 
               
             </Card>
-            </div>
+          
         )
     }
 

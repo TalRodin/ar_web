@@ -7,6 +7,8 @@ const Container =styled.ul`
     text-align:right;
     list-style:none;
     position: fixed;
+    display: flex;
+    flex-direction:column;
     @media ${device.tablet} { 
         display: flex;
         flex-direction:row;
@@ -19,9 +21,9 @@ const Container =styled.ul`
             }
 `
 const Body = styled.div`
-    position:absolute;
+    position:fixed;
     margin-left: 88%;
-    margin-top: 20%;
+    margin-top: 18%;
     
     @media ${device.tablet} { 
         margin-left: 27%;
@@ -63,15 +65,23 @@ const Body = styled.div`
         position:relative; }
 `
 const Wrapper=styled.li`
-    margin: 8px 0;
+    margin:4px 4px;
     cursor: pointer;
     color:#414141;
+    padding:2%;
+    float:right;
 `
-const A=styled.a`
+const A=styled.h6`
     font-size: small;
+    font-weight: 300;
+    color:#26282a;
     font-family: 'Lato', sans-serif;
-    // font-family: 'Nothing You Could Do', cursive;
-    padding:5px;
+    margin:0%;
+    &:hover{
+        color:#5c404b;
+        font-weight: 600;
+    }
+    
     @media only screen and (max-width: 700px) {
         font-size: 10px;}
     @media only screen and (max-width: 660px) {
@@ -88,21 +98,19 @@ const Input=styled.input`
     width:6px;   
 `
 const B=styled.div`
-width: 3px;
-height: 3px;
-margin:1%;
+width: 6px;
+height: 6px;
+border-radius:50%;
+border: solid 1px #ad8781;
 cursor: pointer;
 float:right;
-padding:1%;
-border-radius: 50px;
-background-color: #fbfbfb;
-box-shadow: 0 0 6px 6px #fbfbfb, 12px 12px 16px 8px rgba(136, 136, 136, 0.7), -12px -12px 16px 8px rgba(244, 244, 244, 0.7);
-&:hover {
-  box-shadow: -2px -2px 5px rgba(0,0,0,0.7), 2px 2px 5px rgba(255,255,255,0.1);
+// box-shadow: 0 0 6px 6px #fbfbfb, 12px 12px 16px 8px rgba(136, 136, 136, 0.7), -12px -12px 16px 8px rgba(244, 244, 244, 0.7);
+// &:hover {
+//   box-shadow: -2px -2px 5px rgba(0,0,0,0.7), 2px 2px 5px rgba(255,255,255,0.1);
   
-}
-&:active {
-  box-shadow: inset 5px 5px 10px rgba(0,0,0,0.7) , inset -5px -5px 10px rgba(255,255,255,0.1);
+// }
+// &:active {
+//   box-shadow: inset 5px 5px 10px rgba(0,0,0,0.7) , inset -5px -5px 10px rgba(255,255,255,0.1);
 `
 
 class Navigation extends React.Component{
@@ -124,7 +132,7 @@ class Navigation extends React.Component{
                             onSetInactive={this.handleSetInactive}
                             ignoreCancelEvents={false}
                         >
-                            <div class="indicator"></div>
+                            
                             
                             <A>Home</A>
                             {/* <B></B> */}
@@ -146,10 +154,10 @@ class Navigation extends React.Component{
                             onSetInactive={this.handleSetInactive}
                             ignoreCancelEvents={false}
                         >
-                            <div class="indicator"></div>
+                             
                             
                             <A>About</A>
-                            
+                            {/* <B></B> */}
                             {/* <Input class="state" type="radio" name="app" id="b" value="b"/> */}
                         </Link>
                         </Wrapper>
@@ -168,9 +176,10 @@ class Navigation extends React.Component{
                             onSetInactive={this.handleSetInactive}
                             ignoreCancelEvents={false}
                         >
-                            <div class="indicator"></div>
+                             
                             
                             <A>Articles</A>
+                            {/* <B></B> */}
                             {/* <Input class="state" type="radio" name="app" id="c" value="c"/> */}
                         </Link>
                         </Wrapper>
@@ -192,6 +201,7 @@ class Navigation extends React.Component{
                             <div class="indicator"></div>
                             
                             <A>Projects</A>
+                            {/* <B></B> */}
                             {/* <Input class="state" type="radio" name="app" id="d" value="d"/> */}
                         </Link>
                         </Wrapper>
@@ -210,9 +220,8 @@ class Navigation extends React.Component{
                             onSetInactive={this.handleSetInactive}
                             ignoreCancelEvents={false}
                         >
-                            <div class="indicator"></div>
-                            
-                            <A>Open Source</A>
+                            <A>OpenSource</A>
+                            {/* <B></B> */}
                             {/* <Input class="state" type="radio" name="app" id="e" value="e"/> */}
                         </Link>
                         </Wrapper>
@@ -231,9 +240,8 @@ class Navigation extends React.Component{
                             onSetInactive={this.handleSetInactive}
                             ignoreCancelEvents={false}
                         >
-                            <div class="indicator"></div>
-                            
                             <A>Contact</A>
+                            {/* <B></B> */}
                             {/* <Input class="state" type="radio" name="app" id="f" value="f"/> */}
                         </Link>
                         </Wrapper>

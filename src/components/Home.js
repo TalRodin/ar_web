@@ -14,7 +14,7 @@ const H1=styled.h1`
     transform: translate(-50%, -50%);
     text-transform: uppercase;
     letter-spacing: 13px;
-    font-weight: large;
+    font-weight: bolder;
     font-size: 1.8rem;
     line-height: 2.5rem;
     @media only screen and (max-width: 870px) {
