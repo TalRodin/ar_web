@@ -8,7 +8,7 @@ const A=styled.a`
     padding-left:2%;
     padding-top:2%;
     margin:2%;
-    color:#1a1b1d;
+    color:#d1ddee;
 
 `
 
@@ -26,7 +26,21 @@ const P = styled.p`
  margin-left:5%;
  
 `
-
+const Size=styled.div`
+background-color:#fbfbfb;
+border-radius: 50px;
+margin:2%;
+height:6%;
+border: 0.5px solid #f2f3f6;
+box-shadow: inset 0.5px 0.5px 3.5px #BABECC, inset -3.5px -3.5px 8.5px #FFF;
+}
+`
+const D=styled.div`
+background:#6d5dfc;
+border-radius: 60px;
+    height:8px;
+    margin:2px;
+`
 const SingleProject =(props)=>{
         console.log(props)
         return (
@@ -40,15 +54,21 @@ const SingleProject =(props)=>{
               <Link to={{
                   pathname: `/projects/${props.project.id}`
                   }}>
-                   <A cursor='pointer'><i class="fa fa-info" aria-hidden="true"></i></A>
+                   <A cursor='pointer'><i  class="fa fa-info" aria-hidden="true"></i></A>
               </Link>
              
               <A href={`${props.project.github}`} cursor='pointer' class="icon-link" title="Follow us on Github"><i class="fab  fa-github"></i></A>
               </P>
-              <P>
+              {/* <P>
               <progress  className="progress-bar" value={`${props.project.size}`} max='5'></progress>
-              </P>
-              </div>
+              </P> */}
+            <Size className="progress">
+           
+            <D  style={{width:`${(props.project.size/5)*100}%`}}></D>
+ 
+            </Size>
+           </div>
+              
 
               
             </Card>
