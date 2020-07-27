@@ -15,12 +15,15 @@ const A=styled.a`
 const Card = styled.div`
         background-color: #fbfbfb;
         box-shadow: 0 0 6px 6px  #fbfbfb, 12px 12px 16px 8px rgba(136, 136, 136, 0.7), -12px -12px 16px 8px rgba(244, 244, 244, 0.7);
-        padding: 25px;
+        padding: 30px;
         border-radius: 35px;
         width: max-content;
         display: grid;
         grid-template-columns: 1fr 1fr ;
- 
+        border:10px solid rgba(235,236,240,0.9);
+        border-top:none;
+        border-right:none;
+        border-bottom:none;
 `
 const P = styled.p`
  margin-left:5%;
@@ -41,12 +44,27 @@ border-radius: 60px;
     height:8px;
     margin:2px;
 `
+
+const I = styled.img`
+      width:200px;
+      height:200px;
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.6);
+      filter: grayscale(100%);
+    //   padding:0.6px;
+`
+const C =styled.div`
+      width:201px;
+      height:201px;
+      border: 0.5px solid #f2f3f6;
+`
+
 const SingleProject =(props)=>{
         console.log(props)
         return (
             <Card>
-              
-               <img src={`${props.project.thumbnail}`} width='200px' height='200px' border-radius='25px'/>
+               <C>
+                    <I src={`${props.project.thumbnail}`} />
+               </C>
                <div>
                <P>
               {props.project.title}</P>

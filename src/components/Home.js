@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 import { device } from '../device';
-
+import Tilt from 'react-parallax-tilt';
 const Wrap=styled.div`
     height: 100vh;
     width:auto;
@@ -10,7 +10,7 @@ const H1=styled.h1`
 
     font-family: 'Lato', sans-serif;
     position: absolute;
-    top: 50%;
+    top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-transform: uppercase;
@@ -49,10 +49,56 @@ const H1=styled.h1`
       }
      
 `
-function Home() {
-  return (
-    <Wrap id='home'><H1>Alyona Rodina</H1></Wrap>
-  );
-}
+const T1=styled.div`
+    margin:0%;
+    margin-top:30%;
+    margin-left:40%;
+    
+`
+const T2=styled.div`
+    margin:0%;
+    margin-top:10%;
+    margin-left:20%;
+
+    
+`
+
+const T3=styled.div`
+    margin:0%;
+    padding-top:20%;
+    padding-left:30%;
+    
+`
+class Home extends React.Component {
+  render(){
+    return (
+      <Wrap id='home'>
+{/*         
+       <Tilt className="Tilt" options={{ max : 25 }} style={{ height: 20, width: 20, perspective:'100px'}}>
+         < T1 className="Tilt-inner">X</T1>
+       </Tilt>
+       <Tilt className="Tilt" options={{ max : 25 }} style={{ height: 20, width: 20}}>
+         <div >X</div>
+       </Tilt>
+       <Tilt className="Tilt" options={{ max : 25 }} style={{ height: 20, width: 20}}>
+         <div >X</div>
+       </Tilt> */}
+   <H1 >Alyona Rodina </H1>
+   {/* <Tilt>
+   <T2 >
+X
+      </T2>
+      <T1 >
+      X
+      </T1>
+    <T3 >
+      X
+      </T3>
+      </Tilt> */}
+      </Wrap>
+    );
+  }
+  }
+
 
 export default Home;

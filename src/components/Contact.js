@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const Wrap=styled.div`
     height: 30vh;
     width:auto;
-    background: #343434;
+    background: #26282a;
     vertical-align: top;
     padding-top:10px;
 `
@@ -16,28 +16,24 @@ const Email = styled.div`
   font-size: 14px;
   padding: 2%;
   float:right;
+  text-shadow: 0.5px 0.5px 0.5px #000;
 `
 
 const A=styled.a`
     
     color:#fbfbfb;
-    &:hover{
-      color:#1DA1F2;
-    }
-    
+   
 `
 const B = styled.div`
     width: 20px;
     height: 20px;
-    margin:1%;
+    margin:10px;
     cursor: pointer;
     float:left;
     padding:1%;
     border-radius: 50px;
-    background-color: #343434;
-    box-shadow: -2px -2px 5px rgba(0,0,0,0.7), 2px 2px 5px rgba(255,255,255,0.1);
-    &:active {
-      box-shadow: inset 5px 5px 10px rgba(0,0,0,0.7) , inset -5px -5px 10px rgba(255,255,255,0.1);
+    border: 0.05px solid #f2f3f6;
+    
 `
 function Contact() {
   return (
