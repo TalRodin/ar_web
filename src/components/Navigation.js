@@ -4,11 +4,12 @@ import styled from 'styled-components'
 import { device } from '../device';
 
 const Container =styled.ul`
-    text-align:right;
+    // text-align:right;
     list-style:none;
     position: fixed;
     display: flex;
-    flex-direction:column;
+    flex-direction:row;
+    padding-right:10%;
     @media ${device.tablet} { 
         display: flex;
         flex-direction:row;
@@ -22,54 +23,22 @@ const Container =styled.ul`
 `
 const Body = styled.div`
     position:fixed;
-    margin-left: 88%;
-    margin-top: 18%;
-    
+    margin-left: 65%;
+    margin-top: 5px;
+    z-index: 1;
     @media ${device.tablet} { 
         margin-left: 27%;
         margin-top:0%;
         position:relative;
             }
-    @media only screen and (max-width: 1040px) {
-        margin-left: 27%;
-        margin-top:0%;
-        position:relative;
-                }
-    @media only screen and (max-width: 785px) {
-        margin-left: 27%;
-        margin-top:0%;
-        position:relative; }
-    @media only screen and (max-width: 740px) {
-            margin-left: 20%;
-            margin-top:0%;
-            position:relative; }
-    @media only screen and (max-width: 700px) {
-        margin-left: 23%;
-        margin-top:0%;
-        position:relative; }
-    @media only screen and (max-width: 660px) {
-        margin-left: 20%;
-        margin-top:0%;
-        position:relative; }
-    @media only screen and (max-width: 600px) {
-        margin-left: 18%;
-        margin-top:0%;
-        position:relative; }
-    @media only screen and (max-width: 560px) {
-        margin-left: 16%;
-        margin-top:0%;
-        position:relative; }
-    @media only screen and (max-width: 530px) {
-        margin-left: 15%;
-        margin-top:0%;
-        position:relative; }
+   
 `
 const Wrapper=styled.li`
     margin:4px 4px;
     cursor: pointer;
     color:#414141;
     padding:2%;
-    float:right;
+    // float:right;
 `
 const A=styled.h6`
     font-size: small;
