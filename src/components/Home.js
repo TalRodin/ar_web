@@ -49,25 +49,79 @@ const H1=styled.h1`
       }
      
 `
-const T1=styled.div`
-    margin:0%;
-    margin-top:30%;
-    margin-left:40%;
-    
-`
-const T2=styled.div`
-    margin:0%;
-    margin-top:10%;
-    margin-left:20%;
+const T4=styled.img`
+padding-top:-1%;
+padding-left:95%;
+width:10px;
+height:10px;
 
-    
+  `
+const T1=styled.img`
+padding-top:5%;
+padding-left:5%;
+width:10px;
+height:10px;
+`
+const T2=styled.img`
+padding-top:2%;
+padding-left:60%;
+width:10px;
+height:10px;
 `
 
-const T3=styled.div`
-    margin:0%;
-    padding-top:20%;
-    padding-left:30%;
-    
+const T3=styled.img`
+padding-top:10%;
+padding-left:80%;
+width:10px;
+height:10px;  
+`
+const T5=styled.img`
+padding-top:5%;
+padding-left:90%;
+width:10px;
+height:10px;
+`
+const T6=styled.img`
+  padding-top:1%;
+  padding-left:45%;
+  width:10px;
+  height:10px;
+    `
+const Duga=styled.img`
+padding-top:1%;
+padding-left:65%;
+width:10px;
+height:10px;
+`
+const Duga1=styled.img`
+padding-top:5%;
+padding-left:30%;
+width:10px;
+height:10px;
+`
+const Duga2=styled.img`
+padding-top:3%;
+padding-left:40%;
+width:10px;
+height:10px;
+`
+const W=styled.img`
+padding-top:1%;
+padding-left:90%;
+width:20px;
+height:5px;
+`
+const W1=styled.img`
+padding-top:1%;
+padding-left:10%;
+width:20px;
+height:5px;
+`
+const W2=styled.img`
+padding-top:5%;
+padding-left:20%;
+width:20px;
+height:5px;
 `
 class Home extends React.Component {
   render(){
@@ -84,17 +138,56 @@ class Home extends React.Component {
          <div >X</div>
        </Tilt> */}
    <H1 >Alyona Rodina </H1>
-   {/* <Tilt>
-   <T2 >
-X
-      </T2>
-      <T1 >
-      X
-      </T1>
-    <T3 >
-      X
-      </T3>
-      </Tilt> */}
+   <Tilt>
+
+      <T1  src='x.png'/>
+      </Tilt>
+
+      <Tilt>
+       <Duga1 src='duga.png'/>
+      </Tilt>
+
+      <Tilt>
+      <T2 src='x.png'/>
+      </Tilt>
+
+      <Tilt>
+      <T4 src='triangle.png'/>
+      </Tilt>
+
+      <Tilt>
+      <T3 src='x.png'/>
+      </Tilt>
+
+      <Tilt>
+       <W1 src='wave.png'/>
+      </Tilt>
+
+      <Tilt>
+       <Duga2 src='duga.png'/>
+      </Tilt>
+
+      <Tilt>
+      <T5 src='triangle.png'/>
+      </Tilt>
+
+      <Tilt>
+       <W2 src='wave.png'/>
+      </Tilt>
+
+      <Tilt>
+      <T6 src='triangle.png'/>
+      </Tilt>
+
+      <Tilt>
+       <Duga src='duga.png'/>
+      </Tilt>
+
+      <Tilt>
+       <W src='wave.png'/>
+      </Tilt>
+      
+      
       </Wrap>
     );
   }
