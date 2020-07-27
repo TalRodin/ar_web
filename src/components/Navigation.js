@@ -47,7 +47,7 @@ const A=styled.h6`
     font-family: 'Lato', sans-serif;
     margin:0%;
     &:hover{
-        color:#5c404b;
+        color:#6d5dfc;
         font-weight: 600;
     }
     
