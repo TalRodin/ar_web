@@ -54,9 +54,9 @@ const H6 =  styled.span`
      
 `
 const Hr = styled.hr`
-     
-     
-     
+height: 1px;
+background-color: #6d5dfc;
+border: none;
 `
 function About() {
   return (
@@ -65,7 +65,7 @@ function About() {
       <Box>
         
   <H6>About</H6>
-        <Hr />
+        <Hr/>
         
          <H6><Typing /></H6> 
       </Box>

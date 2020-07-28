@@ -16,17 +16,18 @@ const A=styled.a`
 `
 
 const Card = styled.div`
-        background: transparent;
-        box-shadow: 0 0 3px 3px  #fbfbfb, 12px 12px 16px 8px rgba(136, 136, 136, 0.5), -12px -12px 16px 8px rgba(244, 244, 244, 0.5);
-        padding: 25px;
-        border-radius: 35px;
-        width:max-content;
-        
-        // height:
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        
- 
+width: 60vw;
+height: 60vh;
+padding: 5vh 5vw;
+overflow: hidden;
+background-color: #495a74;
+color: transparent;
+text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.8);
+-webkit-background-clip: text;
+transition: box-shadow 0.7s ease-in-out;
+border-radius: 2px;
+box-shadow: 8px 8px 8px #a3b1c6, -8px -8px 8px rgba(255, 255, 255, 0.5), inset 1px 1px 1px #fff, inset -1px -1px 1px #a3b1c6;
+z-index:1;
 `
 const P = styled.p`
  margin-left:5%;

@@ -13,23 +13,8 @@ const Wrap=styled.div`
     align-items: center;    
 `
 const Box = styled.div`
-
-
-`
-const Container = styled.div`
-    // margin: 0 auto;
-    // width: 500px;
-    // height: 290px;
-    // top:20%;
-    // position:relative;
-    // border-radius: 35px;
-    // box-shadow: 0 0 6px 6px #fbfbfb, 12px 12px 16px 8px rgba(136, 136, 136, 0.7), -12px -12px 16px 8px rgba(244, 244, 244, 0.7);
-    // @media ${device.tablet} {
-    //   width: 280px;
-    //   height: 250px;
-    // }
-    width: 60vw;
-    height: 60vh;
+width: 60vw;
+height: 60vh;
 padding: 5vh 5vw;
 overflow: hidden;
 background-color: #495a74;
@@ -39,6 +24,22 @@ text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.8);
 transition: box-shadow 0.7s ease-in-out;
 border-radius: 2px;
 box-shadow: 8px 8px 8px #a3b1c6, -8px -8px 8px rgba(255, 255, 255, 0.5), inset 1px 1px 1px #fff, inset -1px -1px 1px #a3b1c6;
+justify-content: center; 
+display:flex;
+`
+const Container = styled.div`
+    // margin: 0 auto;
+    width: 500px;
+    // height: 290px;
+    // top:20%;
+    // position:relative;
+    // border-radius: 35px;
+    // box-shadow: 0 0 6px 6px #fbfbfb, 12px 12px 16px 8px rgba(136, 136, 136, 0.7), -12px -12px 16px 8px rgba(244, 244, 244, 0.7);
+    // @media ${device.tablet} {
+    //   width: 280px;
+    //   height: 250px;
+    // }
+
 // z-index:12;
     `
 const H = styled.h3`
@@ -82,10 +83,10 @@ const Keywords= styled.div`
     
 `
 const S=styled.svg`
-color:#d1ddee;
+color:#6d5dfc;
     margin-left:50%;
     transform: translate(-50%, -50%);
-    margin-top:1%;
+    margin-top:5%;
     @media ${device.tablet} {
       width:30pt;
       height:30pt;
@@ -162,7 +163,7 @@ class Articles extends React.Component{
                       })}</p>
                     </Keywords>
                       <a href={`${d.link}`}>
-                        <S width='30' height='30'  fill='#d1ddee' viewBox="0 0 64 64"><title/><path d="M60.72,16.32l0,0a1,1,0,0,0-.17-.13l-.05,0L44,7.9a3,3,0,0,0-3.86,1L29,26.17l-6.14-9.7a1,1,0,0,0-.13-.17h0l0,0h0a1,1,0,0,0-.27-.18L7.34,8.55A3,3,0,0,0,3,11.24V46.76a3,3,0,0,0,1.66,2.68l14,7A3,3,0,0,0,23,53.76V39.12L56.63,56.39A3,3,0,0,0,61,53.72V17A1,1,0,0,0,60.72,16.32ZM21,53.76a1,1,0,0,1-1.45.89l-14-7A1,1,0,0,1,5,46.76V11.24a1,1,0,0,1,.47-.85A1,1,0,0,1,6,10.23a1,1,0,0,1,.44.11L21,17.62Zm2-16.87V20.45L38.42,44.79ZM30.17,28,41.86,10a1,1,0,0,1,1.29-.35L58.56,17.4,41,45.13ZM59,53.72a1,1,0,0,1-1.46.89L42.31,46.79,59,20.45Z"/></S>
+                        <S width='30' height='30'  fill='#6d5dfc' viewBox="0 0 64 64"><title/><path d="M60.72,16.32l0,0a1,1,0,0,0-.17-.13l-.05,0L44,7.9a3,3,0,0,0-3.86,1L29,26.17l-6.14-9.7a1,1,0,0,0-.13-.17h0l0,0h0a1,1,0,0,0-.27-.18L7.34,8.55A3,3,0,0,0,3,11.24V46.76a3,3,0,0,0,1.66,2.68l14,7A3,3,0,0,0,23,53.76V39.12L56.63,56.39A3,3,0,0,0,61,53.72V17A1,1,0,0,0,60.72,16.32ZM21,53.76a1,1,0,0,1-1.45.89l-14-7A1,1,0,0,1,5,46.76V11.24a1,1,0,0,1,.47-.85A1,1,0,0,1,6,10.23a1,1,0,0,1,.44.11L21,17.62Zm2-16.87V20.45L38.42,44.79ZM30.17,28,41.86,10a1,1,0,0,1,1.29-.35L58.56,17.4,41,45.13ZM59,53.72a1,1,0,0,1-1.46.89L42.31,46.79,59,20.45Z"/></S>
                       </a>
                   </div>
                 )

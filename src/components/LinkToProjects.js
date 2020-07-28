@@ -72,6 +72,12 @@ const I=styled.img`
  padding-top:20%;
  top: 40%;
 `
+const Hr = styled.hr`
+height: 1px;
+background-color: #6d5dfc;
+border: none;
+`
+
 const LinkToProjects=() =>{
   
   return (
@@ -86,7 +92,7 @@ const LinkToProjects=() =>{
       </Arrow>
     </ItemToProject>
     </L>
-    <hr />
+    <Hr />
     <P>
         Python
         JavaScript

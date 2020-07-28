@@ -3,7 +3,9 @@ import Codepen from "react-codepen-embed";
 import styled from 'styled-components'
 
 const Cod = styled.div`
-    width:900px;
+    width:1000px;
+    margin-left:10%;
+    
     padding:4%;
  
 `

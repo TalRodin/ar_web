@@ -3,12 +3,17 @@ import styled from 'styled-components'
 import {db} from '../Firebase'
 import SingleProjectOS from './SingleProjectOS'
 import sample from './video.mp4';
+import { device } from '../device';
 const Wrap=styled.div`
     height: 100vh;
-    overflow:hidden;
-    display:flex;
-    justify-content:center;
-    // align-items:center;
+    width:auto;
+    background-color:#f8f8f8;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    @media ${device.tablet} { 
+      height: 60vh;
+          }
 `
 const Box = styled.div`
       margin: 11%;
@@ -48,16 +53,16 @@ render() {
     console.log(projects)
   return (
     <Wrap id='opensource'>
-      <V> <video  loop muted poster="http" autoPlay width='750' height='350'>
+      {/* <V> <video  loop muted poster="http" autoPlay width='750' height='350'>
                                 <source src={sample} type='video/mp4'/>
                             </video>
                    
-      </V>
-       <Box>
+      </V> */}
+       {/* <Box> */}
        {this.state.projects && this.state.projects.map(project=>{
          return <SingleProjectOS key={project.id} project={project} />
        })}
-      </Box>
+      {/* </Box> */}
 
   
     </Wrap>
