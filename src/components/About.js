@@ -30,18 +30,20 @@ z-index:1;
 `
 
 const H6 =  styled.span`
-  position: absolute;
+  // position: absolute;
   // display: inline-block;
-  width: 70%;
-  margin-left: 10%;
-  margin-right: 5%;
-  margin-top: 5%;
-  margin-bottom:5%;
+  // width: 70%;
+  // margin-left: 10%;
+  // margin-right: 5%;
+  // margin-top: 5%;
+  // margin-bottom:5%;
+  color:#1a1b1d;
   font-family: 'Lato', sans-serif;
-  line-height: 2.5;
+  line-height: 2;
   letter-spacing: 1px;
   font-size: 14px;
-  float:left;
+  // float:left;
+  text-shadow: 1px 1px #fff;
   @media ${device.tablet} { 
     display: flex;
     flex-direction: column;
@@ -62,10 +64,10 @@ function About() {
     <Wrap >
       <Box>
         
-        About
+  <H6>About</H6>
         <Hr />
-        <Typing />
-         {/* <H6></H6>  */}
+        
+         <H6><Typing /></H6> 
       </Box>
     </Wrap>
     </div>

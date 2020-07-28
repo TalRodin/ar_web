@@ -60,7 +60,7 @@ box-shadow: inset 0.5px 0.5px 3.5px #BABECC, inset -3.5px -3.5px 8.5px #FFF;
 const D=styled.div`
 background:#6d5dfc;
 border-radius: 60px;
-    height:8px;
+    height:9px;
     margin:2px;
 `
 
@@ -68,7 +68,7 @@ const I = styled.img`
       width:200px;
       height:200px;
       box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.6);
-      filter: grayscale(100%);
+      filter: grayscale(80%);
     //   padding:0.6px;
 `
 const C =styled.div`

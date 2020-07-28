@@ -7,36 +7,45 @@ import { device } from '../device';
 
 
 const Wrap=styled.div`
-    height: 100vh;    
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;    
+`
+const Box = styled.div`
+
+
 `
 const Container = styled.div`
-    margin: 0 auto;
-    // padding: 0px 40px 40px 40px;
-    width: 500px;
-    height: 290px;
-    top:20%;
-    position:relative;
-    border-radius: 35px;
-    // background-color: #fbfbfb;
-    background-color: transparent;
-    box-shadow: 0 0 6px 6px #fbfbfb, 12px 12px 16px 8px rgba(136, 136, 136, 0.7), -12px -12px 16px 8px rgba(244, 244, 244, 0.7);
-    // animation: moveInBottom 9s ease-out;
-    @media ${device.tablet} {
-      width: 280px;
-      height: 250px;
-    }
-    // @keyframes moveInBottom {
-    //   0% {
-    //     opacity: 0;
-    //     transform: translateY(4rem); }
-    //   100% {
-    //     opacity: 1;
-    //     transform: translate(0); } }
+    // margin: 0 auto;
+    // width: 500px;
+    // height: 290px;
+    // top:20%;
+    // position:relative;
+    // border-radius: 35px;
+    // box-shadow: 0 0 6px 6px #fbfbfb, 12px 12px 16px 8px rgba(136, 136, 136, 0.7), -12px -12px 16px 8px rgba(244, 244, 244, 0.7);
+    // @media ${device.tablet} {
+    //   width: 280px;
+    //   height: 250px;
+    // }
+    width: 60vw;
+    height: 60vh;
+padding: 5vh 5vw;
+overflow: hidden;
+background-color: #495a74;
+color: transparent;
+text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.8);
+-webkit-background-clip: text;
+transition: box-shadow 0.7s ease-in-out;
+border-radius: 2px;
+box-shadow: 8px 8px 8px #a3b1c6, -8px -8px 8px rgba(255, 255, 255, 0.5), inset 1px 1px 1px #fff, inset -1px -1px 1px #a3b1c6;
+// z-index:12;
     `
 const H = styled.h3`
     color: #1a1b1d;
-    font-size:24px;
-    line-height: 28px;
+    font-size:18px;
+    line-height: 18px;
+    text-shadow: 1px 1px #fff;
     text-align: center;
     font-weight: normal;
     // position:relative;
@@ -56,8 +65,9 @@ const H = styled.h3`
 const Keywords= styled.div`
     color:#1a1b1d;
     text-align: left;
-    margin-left:20%;
-    font-size:20px;
+    margin-left:25%;
+    font-size:12px;
+    text-shadow: 1px 1px #fff;
     animation: appearing 4s ease-out;
     @media ${device.tablet} {
       font-size:14px;
@@ -72,12 +82,10 @@ const Keywords= styled.div`
     
 `
 const S=styled.svg`
-     &:hover{
-      fill:#4b230b;   
- }
+color:#d1ddee;
     margin-left:50%;
     transform: translate(-50%, -50%);
-    margin-top:5%;
+    margin-top:1%;
     @media ${device.tablet} {
       width:30pt;
       height:30pt;
@@ -100,7 +108,16 @@ const I = styled.img`
     border-radius:30% 70% 70% 30% / 30% 30% 70% 70%;
     transform: rotate(50deg);
 `
-
+const Img = styled.img`
+     width:20%;
+     height:20%;
+     filter: grayscale(80%);
+     display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+     
+`
 class Articles extends React.Component{
   constructor(props) {
     super(props);
@@ -131,13 +148,13 @@ class Articles extends React.Component{
     };
     return (
       <Wrap id='articles'>
-     
+            <Box>
             <Container  >
             <Slider {...settings} >
               {!data ? console.log(false) : data.map((d)=>{
                 return (
                   <div>
-                     <div>{console.log(d)}</div>
+                     <Img src={d.thumbnail}/>
                     <H>{d.title}</H>
                     <Keywords>
                       <p>{d.categories.map(c=>{
@@ -145,7 +162,7 @@ class Articles extends React.Component{
                       })}</p>
                     </Keywords>
                       <a href={`${d.link}`}>
-                        <S width='60' height='60'  fill='#5c404b' viewBox="0 0 64 64"><title/><path d="M60.72,16.32l0,0a1,1,0,0,0-.17-.13l-.05,0L44,7.9a3,3,0,0,0-3.86,1L29,26.17l-6.14-9.7a1,1,0,0,0-.13-.17h0l0,0h0a1,1,0,0,0-.27-.18L7.34,8.55A3,3,0,0,0,3,11.24V46.76a3,3,0,0,0,1.66,2.68l14,7A3,3,0,0,0,23,53.76V39.12L56.63,56.39A3,3,0,0,0,61,53.72V17A1,1,0,0,0,60.72,16.32ZM21,53.76a1,1,0,0,1-1.45.89l-14-7A1,1,0,0,1,5,46.76V11.24a1,1,0,0,1,.47-.85A1,1,0,0,1,6,10.23a1,1,0,0,1,.44.11L21,17.62Zm2-16.87V20.45L38.42,44.79ZM30.17,28,41.86,10a1,1,0,0,1,1.29-.35L58.56,17.4,41,45.13ZM59,53.72a1,1,0,0,1-1.46.89L42.31,46.79,59,20.45Z"/></S>
+                        <S width='30' height='30'  fill='#d1ddee' viewBox="0 0 64 64"><title/><path d="M60.72,16.32l0,0a1,1,0,0,0-.17-.13l-.05,0L44,7.9a3,3,0,0,0-3.86,1L29,26.17l-6.14-9.7a1,1,0,0,0-.13-.17h0l0,0h0a1,1,0,0,0-.27-.18L7.34,8.55A3,3,0,0,0,3,11.24V46.76a3,3,0,0,0,1.66,2.68l14,7A3,3,0,0,0,23,53.76V39.12L56.63,56.39A3,3,0,0,0,61,53.72V17A1,1,0,0,0,60.72,16.32ZM21,53.76a1,1,0,0,1-1.45.89l-14-7A1,1,0,0,1,5,46.76V11.24a1,1,0,0,1,.47-.85A1,1,0,0,1,6,10.23a1,1,0,0,1,.44.11L21,17.62Zm2-16.87V20.45L38.42,44.79ZM30.17,28,41.86,10a1,1,0,0,1,1.29-.35L58.56,17.4,41,45.13ZM59,53.72a1,1,0,0,1-1.46.89L42.31,46.79,59,20.45Z"/></S>
                       </a>
                   </div>
                 )
@@ -153,6 +170,7 @@ class Articles extends React.Component{
               }
             </Slider>
             </Container >
+            </Box>
       </Wrap>
     );
   }

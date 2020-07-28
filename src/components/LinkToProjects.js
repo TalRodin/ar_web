@@ -19,6 +19,7 @@ const L=styled.h6`
         color:#414141;
         font-family: 'Lato', sans-serif;
         font-size: 14px;
+        text-shadow: 1px 1px #fff;
         // text-align:right;
         // float:right;
         // top:20%;
@@ -47,6 +48,7 @@ const P=styled.p`
   word-spacing:5px;
   color:#414141;
   font-size: 14px;
+  text-shadow: 1px 1px #fff;
 `
 const Box = styled.div`
 width: 60vw;
@@ -62,7 +64,14 @@ border-radius: 2px;
 box-shadow: 8px 8px 8px #a3b1c6, -8px -8px 8px rgba(255, 255, 255, 0.5), inset 1px 1px 1px #fff, inset -1px -1px 1px #a3b1c6;
 z-index:1;
 `
+const I=styled.img`
+ width:50px;
+ height:90px;
+ float:right;
 
+ padding-top:20%;
+ top: 40%;
+`
 const LinkToProjects=() =>{
   
   return (
@@ -90,7 +99,9 @@ const LinkToProjects=() =>{
         D3js
         AWS
       </P>
+      <I src='lavander.png'/>
       </Box>
+      
     </Wrap>
   
   );
