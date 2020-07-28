@@ -10,7 +10,7 @@ import Home from './Home'
 import Logo from './svg'
 
 const Wrapper=styled.div`
-  background-color: #fbfbfb;
+  background-color: #f8f8f8;
 `
 const HomeStart=()=> {
   return (

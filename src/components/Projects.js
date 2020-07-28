@@ -57,7 +57,7 @@ class Projects extends React.Component{
     const projects=this.state
     console.log(projects)
     return (
-      <div >
+    
        
        <Wrap>
        <L>Home</L>
@@ -73,7 +73,7 @@ class Projects extends React.Component{
               })}
             </Grid>
        </Wrap>
-      </div>
+    
   
     );
   }

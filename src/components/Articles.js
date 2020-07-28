@@ -17,21 +17,21 @@ const Container = styled.div`
     top:20%;
     position:relative;
     border-radius: 35px;
-    background-color: #fbfbfb;
-    // background-color: transparent;
+    // background-color: #fbfbfb;
+    background-color: transparent;
     box-shadow: 0 0 6px 6px #fbfbfb, 12px 12px 16px 8px rgba(136, 136, 136, 0.7), -12px -12px 16px 8px rgba(244, 244, 244, 0.7);
-    animation: moveInBottom 9s ease-out;
+    // animation: moveInBottom 9s ease-out;
     @media ${device.tablet} {
       width: 280px;
       height: 250px;
     }
-    @keyframes moveInBottom {
-      0% {
-        opacity: 0;
-        transform: translateY(4rem); }
-      100% {
-        opacity: 1;
-        transform: translate(0); } }
+    // @keyframes moveInBottom {
+    //   0% {
+    //     opacity: 0;
+    //     transform: translateY(4rem); }
+    //   100% {
+    //     opacity: 1;
+    //     transform: translate(0); } }
     `
 const H = styled.h3`
     color: #1a1b1d;

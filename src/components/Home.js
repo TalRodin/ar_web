@@ -54,6 +54,7 @@ padding-top:1%;
 padding-left:95%;
 width:10px;
 height:10px;
+opacity:0.5;
 
   `
 const T1=styled.img`
@@ -61,68 +62,79 @@ padding-top:1%;
 padding-left:5%;
 width:10px;
 height:10px;
-transform: perspective(500px);
+opacity:0.5;
+
 `
 const T2=styled.img`
 padding-top:1%;
 padding-left:60%;
 width:10px;
 height:10px;
+opacity:0.5;
 `
 
 const T3=styled.img`
 padding-top:3%;
 padding-left:80%;
 width:10px;
-height:10px;  
+height:10px; 
+opacity:0.5; 
 `
 const T5=styled.img`
 padding-top:3%;
 padding-left:90%;
 width:10px;
 height:10px;
+opacity:0.5;
 `
 const T6=styled.img`
   padding-top:3%;
   padding-left:45%;
   width:10px;
   height:10px;
+  opacity:0.5;
     `
 const Duga=styled.img`
 padding-top:3%;
 padding-left:65%;
 width:10px;
 height:10px;
+opacity:0.5;
 `
 const Duga1=styled.img`
 padding-top:3%;
 padding-left:30%;
 width:10px;
 height:10px;
+opacity:0.5;
 `
 const Duga2=styled.img`
 padding-top:3%;
 padding-left:40%;
 width:10px;
 height:10px;
+opacity:0.5;
 `
 const W=styled.img`
 padding-top:1%;
 padding-left:90%;
 width:20px;
 height:5px;
+opacity:0.5;
 `
 const W1=styled.img`
 padding-top:6%;
 padding-left:10%;
 width:20px;
 height:5px;
+opacity:0.5;
 `
 const W2=styled.img`
 padding-top:6%;
 padding-left:20%;
 width:20px;
 height:5px;
+opacity:0.5;
 `
 class Home extends React.Component {
   render(){

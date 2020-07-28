@@ -47,7 +47,7 @@ const A=styled.h6`
     font-family: 'Lato', sans-serif;
     margin:0%;
     &:hover{
-        color:#6d5dfc;
+        color:#a8a7d1;
         font-weight: 600;
     }
     
@@ -159,7 +159,7 @@ class Navigation extends React.Component{
                             spy={true}
                             smooth={true}
                             hashSpy={true}
-                            offset={-150}
+                            offset={-30}
                             duration={400}
                             delay={1000}
                             isDynamic={true}
