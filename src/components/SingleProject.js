@@ -13,17 +13,36 @@ const A=styled.a`
 `
 
 const Card = styled.div`
-        background-color: #fbfbfb;
-        box-shadow: 0 0 6px 6px  #fbfbfb, 12px 12px 16px 8px rgba(136, 136, 136, 0.7), -12px -12px 16px 8px rgba(244, 244, 244, 0.7);
-        padding: 30px;
-        border-radius: 35px;
-        width: max-content;
+        // background-color: #fbfbfb;
+        // box-shadow: 0 0 6px 6px  #fbfbfb, 12px 12px 16px 8px rgba(136, 136, 136, 0.7), -12px -12px 16px 8px rgba(244, 244, 244, 0.7);
+        // padding: 30px;
+        // border-radius: 35px;
+        // width: max-content;
+        // display: grid;
+        // grid-template-columns: 1fr 1fr ;
+        // border:10px solid rgba(235,236,240,0.9);
+        // border-top:none;
+        // border-right:none;
+        // border-bottom:none;
+        // width: 60vw;
         display: grid;
         grid-template-columns: 1fr 1fr ;
         border:10px solid rgba(235,236,240,0.9);
         border-top:none;
         border-right:none;
         border-bottom:none;
+width: max-content;
+height: 30vh;
+padding: 5vh 5vw;
+overflow: hidden;
+background-color: #495a74;
+color: transparent;
+text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.8);
+-webkit-background-clip: text;
+transition: box-shadow 0.7s ease-in-out;
+border-radius: 10px;
+box-shadow: 8px 8px 8px #a3b1c6, -8px -8px 8px rgba(255, 255, 255, 0.5), inset 1px 1px 1px #fff, inset -1px -1px 1px #a3b1c6;
+z-index:1;
 `
 const P = styled.p`
  margin-left:5%;
