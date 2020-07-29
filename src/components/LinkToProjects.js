@@ -6,6 +6,7 @@ import {Route, Switch, Redirect} from 'react-router-dom'
 import NavToProject from './NavToProject'
 import Layout from '../layout'
 import ItemToProject from './ItemToProject'
+
 const Wrap=styled.div`
     height: 100vh;
     width:auto;
@@ -15,10 +16,15 @@ const Wrap=styled.div`
     color:#414141;
     
 `
-const L=styled.h6`  
+const L=styled.span`  
+display:flex;
+flex-direction: row;
+// align-items:center;
+justify-content:space-between;
+
         color:#414141;
         font-family: 'Lato', sans-serif;
-        font-size: 14px;
+        font-size: 16px;
         text-shadow: 1px 1px #fff;
         // text-align:right;
         // float:right;
@@ -29,12 +35,13 @@ const L=styled.h6`
         // position:relative;
 `
 const Arrow=styled.div`
-    text-align:left;
+    // text-align:left;
     // position: absolute;
     // right: 50%;
     // top: -1%;
     // width:4%;
     // height:4%;
+    padding:0;
     color:#414141;
     cursor: pointer;
     &:hover{
@@ -43,9 +50,9 @@ const Arrow=styled.div`
 `
 const P=styled.p`  
   margin-top:5%;
-  width: 90%;
+  width: 100%;
   // margin-left:2%;
-  word-spacing:5px;
+  word-spacing:9px;
   color:#414141;
   font-size: 14px;
   text-shadow: 1px 1px #fff;
@@ -69,8 +76,8 @@ const I=styled.img`
  height:90px;
  float:right;
 
- padding-top:20%;
- top: 40%;
+ padding-top:10%;
+ top: 10%;
 `
 const Hr = styled.hr`
 height: 1px;
@@ -88,7 +95,7 @@ const LinkToProjects=() =>{
       Projects
       <ItemToProject link='projects' >
       <Arrow>
-      <i class="fa fa-arrow-circle-right"  aria-hidden="true"></i>
+      <i padding-left='5%' color='#6d5dfc' text-decoration='none' cursor='pointer' class="fa fa-arrow-circle-right"  aria-hidden="true"></i>
       </Arrow>
     </ItemToProject>
     </L>
@@ -104,6 +111,51 @@ const LinkToProjects=() =>{
         styled-components
         D3js
         AWS
+        React
+        Redux
+        Nodejs
+        Express
+        PostgreSQL (data analyses)
+        Sequelize
+        Relational Model
+        Normalization
+        Heroku
+        CSS
+        HTML5
+        Bootstrap
+        Material UI
+        SVG
+        Webpack
+        npm
+        VSCode
+        Anaconda
+        Git
+        Github
+        Lucid-Chart
+        Postman
+        Mocha
+        Chai
+        Jest
+        Tableau
+        Plotly
+        R
+        C++
+        PHP
+        MATLAB
+        SPSS
+        AGILE Methodology
+        REST API
+        Flask
+        Machine Learning
+        NLP
+        Data Modeling and Evaluation
+        Building predictive models
+        Google OAuth
+        Babel
+        Data Structures and Algorithms
+        System Design
+        AWS lambda
+        AWS DynomoDB
       </P>
       <I src='lavander.png'/>
       </Box>

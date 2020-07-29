@@ -30,20 +30,12 @@ z-index:1;
 `
 
 const H6 =  styled.span`
-  // position: absolute;
-  // display: inline-block;
-  // width: 70%;
-  // margin-left: 10%;
-  // margin-right: 5%;
-  // margin-top: 5%;
-  // margin-bottom:5%;
   color:#1a1b1d;
+  text-shadow: 1px 2px 1px rgba(255,255,255,0.5);
   font-family: 'Lato', sans-serif;
   line-height: 2;
   letter-spacing: 1px;
   font-size: 14px;
-  // float:left;
-  text-shadow: 1px 1px #fff;
   @media ${device.tablet} { 
     display: flex;
     flex-direction: column;
@@ -53,6 +45,14 @@ const H6 =  styled.span`
     font-size: 12px;
         }
      
+`
+const H7 = styled.span`
+color:#1a1b1d;
+  text-shadow: 1px 2px 1px rgba(255,255,255,0.5);
+  font-family: 'Lato', sans-serif;
+  line-height: 2;
+  letter-spacing: 1px;
+  font-size: 16px;
 `
 const Hr = styled.hr`
 height: 1px;
@@ -66,7 +66,7 @@ function About() {
     <Wrap >
       <Box>
         
-  <H6>About</H6>
+  <H7 >About</H7>
         <Hr/>
         
          <H6><Typing /></H6>
