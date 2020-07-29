@@ -7,7 +7,7 @@ const Wrap=styled.div`
     width:auto;
 `
 const H1=styled.h1`
-
+z-index: 1;
     font-family: 'Lato', sans-serif;
     position: absolute;
     top:50%;
@@ -50,93 +50,171 @@ const H1=styled.h1`
      
 `
 const T4=styled.img`
-padding-top:1%;
-padding-left:95%;
+padding-top:1px;
+padding-left:95px;
 width:20px;
 height:20px;
-opacity:0.8;
-
   `
 const T1=styled.img`
-padding-top:1%;
-padding-left:5%;
+padding-top:1px;
+padding-left:5px;
 width:10px;
 height:10px;
-opacity:0.8;
+
 
 `
 const T2=styled.img`
-padding-top:1%;
-padding-left:60%;
+padding-top:5px;
+padding-left:80px;
 width:10px;
 height:10px;
-opacity:0.8;
+
 `
 
 const T3=styled.img`
-padding-top:3%;
-padding-left:80%;
+padding-top:30px;
+padding-left:30px;
 width:10px;
 height:10px; 
-opacity:0.8; 
 `
 const T5=styled.img`
-padding-top:3%;
-padding-left:90%;
+padding-top:3px;
+padding-left:40px;
 width:20px;
 height:20px;
-opacity:0.8;
+
 `
 const T6=styled.img`
-  padding-top:3%;
-  padding-left:45%;
-  width:20px;
-  height:20px;
-  opacity:0.8;
+      padding-top:3px;
+      padding-left:45px;
+      width:20px;
+      height:20px;
+      transform:rotate(180deg);
     `
 const Duga=styled.img`
-padding-top:3%;
-padding-left:65%;
-width:20px;
-height:16px;
-opacity:0.8;
+      padding-top:3px;
+      padding-left:65px;
+      width:20px;
+      height:16px;
 `
 const Duga1=styled.img`
-padding-top:3%;
-padding-left:30%;
-width:20px;
-height:16px;
-opacity:0.8;
+      padding-top:8px;
+      padding-left:70px;
+      width:20px;
+      height:16px;
+      transform:rotate(50deg);
 `
 const Duga2=styled.img`
-padding-top:3%;
-padding-left:40%;
-width:20px;
-height:16px;
-opacity:0.8;
-transform:rotate(50deg);
+      padding-top:3px;
+      padding-left:60px;
+      width:20px;
+      height:16px;
+      transform:rotate(100deg);
 `
 const W=styled.img`
-padding-top:1%;
-padding-left:90%;
-width:25px;
-height:20px;
-opacity:0.8;
+      padding-top:1px;
+      padding-left:90px;
+      width:25px;
+      height:20px;
 `
 const W1=styled.img`
-padding-top:6%;
-padding-left:10%;
-width:25px;
-height:20px;
-opacity:0.8;
+      padding-top:10px;
+      padding-left:20px;
+      width:25px;
+      height:20px;
 `
 const W2=styled.img`
-padding-top:6%;
-padding-left:20%;
-width:25px;
-height:20px;
-opacity:0.8;
+      padding-top:6px;
+      padding-left:80px;
+      width:25px;
+      height:20px;
+      transform:rotate(30deg);
 `
+const Dot1 =styled.img`
+      padding-top:3px;
+      padding-left:10px;
+      width:30px;
+      height:30px;
+`
+const Dot2 =styled.img`
+      padding-top:5px;
+      padding-left:20px;
+      width:30px;
+      height:30px;
+`
+const Dot3 =styled.img`
+      padding-top:9px;
+      padding-left:60px;
+      width:30px;
+      height:30px;
+`
+const Dot4 =styled.img`
+      padding-top:5px;
+      padding-left:20px;
+      width:30px;
+      height:30px;
+`
+const Dot5 =styled.img`
+      padding-top:15px;
+      padding-left:50px;
+      width:30px;
+      height:30px;
+`
+const Dot6 =styled.img`
+      padding-top:15px;
+      padding-left:60px;
+      width:30px;
+      height:30px;
+`
+const Dot7 =styled.img`
+      padding-top:6px;
+      padding-left:100px;
+      width:30px;
+      height:30px;
+    `
+const Dot8 =styled.img`
+      padding-top:33px;
+      padding-left:25px;
+      width:30px;
+      height:30px;
+        `
+const Dot9 =styled.img`
+      padding-top:2px;
+      padding-left:25px;
+      width:30px;
+      height:30px;
+            `
+const Dot10 =styled.img`
+      padding-top:2px;
+      padding-left:25px;
+      width:30px;
+      height:30px;
+           `
+const Dot11=styled.img`
+      padding-top:2px;
+      padding-left:15px;
+      width:30px;
+      height:30px;
+               `
+const Dot12=styled.img`
+      padding-top:2px;
+      padding-left:25px;
+      width:30px;
+      height:30px;
+`
+const Dot13=styled.img`
+      padding-top:2px;
+      padding-left:50px;
+      width:30px;
+      height:30px;
+`
+const Dot14 =styled.img`
+      padding-top:2px;
+      padding-left:5px;
+      width:30px;
+      height:30px;
+`
+                        
 class Home extends React.Component {
   render(){
     return (
@@ -153,55 +231,148 @@ class Home extends React.Component {
        </Tilt> */}
    <H1 >Alyona Rodina </H1>
    <Tilt>
-
+      <Dot1 src='dot.png'/>
+      <W1 src='wave.png'/>
+      <Dot2 src='dot.png'/>
+      <Duga2 src='duga.png'/>
+      <Dot3 src='dot.png'/>
       <T1  src='x.png'/>
-      </Tilt>
-
-      <Tilt>
-       <Duga1 src='duga.png'/>
-      </Tilt>
-
-      <Tilt>
+      <Dot4 src='dot.png'/>
+      <Duga1 src='duga.png'/>
+      <Dot5 src='dot.png'/>
       <T2 src='x.png'/>
-      </Tilt>
-
-      <Tilt>
+      <Dot6 src='dot.png'/>
       <T4 src='triangle.png'/>
-      </Tilt>
-
-      <Tilt>
+      <Dot7 src='dot.png'/>
+     </Tilt>
+     <Tilt>
       <T3 src='x.png'/>
-      </Tilt>
-
-      <Tilt>
-       <W1 src='wave.png'/>
-      </Tilt>
-
-      <Tilt>
-       <Duga2 src='duga.png'/>
-      </Tilt>
-
-      <Tilt>
+      <Dot8 src='dot.png'/>
       <T5 src='triangle.png'/>
-      </Tilt>
-
-      <Tilt>
-       <W2 src='wave.png'/>
-      </Tilt>
-
-      <Tilt>
+      <W2 src='wave.png'/>
+      <Dot9 src='dot.png'/>
+      <Duga src='duga.png'/>
+      <Dot10 src='dot.png'/>
+      <W2 src='wave.png'/>
+      <Dot11 src='dot.png'/>
       <T6 src='triangle.png'/>
-      </Tilt>
-
-      <Tilt>
-       <Duga src='duga.png'/>
-      </Tilt>
-
-      <Tilt>
-       <W src='wave.png'/>
-      </Tilt>
-      
-      
+      <Dot12 src='dot.png'/>
+      <Duga1 src='duga.png'/>
+      <Dot13 src='dot.png'/>
+      <W src='wave.png'/>
+      <Dot14 src='dot.png'/>
+    </Tilt>
+    <Tilt>
+      <Dot1 src='dot.png'/>
+      <W1 src='wave.png'/>
+      <Dot2 src='dot.png'/>
+      <Duga2 src='duga.png'/>
+      <Dot3 src='dot.png'/>
+      <T1  src='x.png'/>
+      <Dot4 src='dot.png'/>
+      <Duga1 src='duga.png'/>
+      <Dot5 src='dot.png'/>
+      <T2 src='x.png'/>
+      <Dot6 src='dot.png'/>
+      <T4 src='triangle.png'/>
+      <Dot7 src='dot.png'/>
+     </Tilt>
+     <Tilt>
+      <T3 src='x.png'/>
+      <Dot8 src='dot.png'/>
+      <T5 src='triangle.png'/>
+      <W2 src='wave.png'/>
+      <Dot9 src='dot.png'/>
+      <Duga src='duga.png'/>
+      <Dot10 src='dot.png'/>
+      <W2 src='wave.png'/>
+      <Dot11 src='dot.png'/>
+      <T6 src='triangle.png'/>
+      <Dot12 src='dot.png'/>
+      <Duga1 src='duga.png'/>
+      <Dot13 src='dot.png'/>
+      <W src='wave.png'/>
+      <Dot14 src='dot.png'/>
+    </Tilt>
+    <Tilt>
+      <Dot1 src='dot.png'/>
+      <W1 src='wave.png'/>
+      <Dot2 src='dot.png'/>
+      <Duga2 src='duga.png'/>
+      <Dot3 src='dot.png'/>
+      <T1  src='x.png'/>
+      <Dot4 src='dot.png'/>
+      <Duga1 src='duga.png'/>
+      <Dot5 src='dot.png'/>
+      <T2 src='x.png'/>
+      <Dot6 src='dot.png'/>
+      <T4 src='triangle.png'/>
+      <Dot7 src='dot.png'/>
+     </Tilt>
+     <Tilt>
+      <T3 src='x.png'/>
+      <Dot8 src='dot.png'/>
+      <T5 src='triangle.png'/>
+      <W2 src='wave.png'/>
+      <Dot9 src='dot.png'/>
+      <Duga src='duga.png'/>
+      <Dot10 src='dot.png'/>
+      <W2 src='wave.png'/>
+      <Dot11 src='dot.png'/>
+      <T6 src='triangle.png'/>
+      <Dot12 src='dot.png'/>
+      <Duga1 src='duga.png'/>
+      <Dot13 src='dot.png'/>
+      <W src='wave.png'/>
+      <Dot14 src='dot.png'/>
+    </Tilt>
+    <Tilt>
+      <Dot1 src='dot.png'/>
+      <W1 src='wave.png'/>
+      <Dot2 src='dot.png'/>
+      <Duga2 src='duga.png'/>
+      <Dot3 src='dot.png'/>
+      <T1  src='x.png'/>
+      <Dot4 src='dot.png'/>
+      <Duga1 src='duga.png'/>
+      <Dot5 src='dot.png'/>
+      <T2 src='x.png'/>
+      <Dot6 src='dot.png'/>
+      <T4 src='triangle.png'/>
+      <Dot7 src='dot.png'/>
+     </Tilt>
+     <Tilt>
+      <T3 src='x.png'/>
+      <Dot8 src='dot.png'/>
+      <T5 src='triangle.png'/>
+      <W2 src='wave.png'/>
+      <Dot9 src='dot.png'/>
+      <Duga src='duga.png'/>
+      <Dot10 src='dot.png'/>
+      <W2 src='wave.png'/>
+      <Dot11 src='dot.png'/>
+      <T6 src='triangle.png'/>
+      <Dot12 src='dot.png'/>
+      <Duga1 src='duga.png'/>
+      <Dot13 src='dot.png'/>
+      <W src='wave.png'/>
+      <Dot14 src='dot.png'/>
+    </Tilt>
+    <Tilt>
+      <Dot1 src='dot.png'/>
+      <W1 src='wave.png'/>
+      <Dot2 src='dot.png'/>
+      <Duga2 src='duga.png'/>
+      <Dot3 src='dot.png'/>
+      <T1  src='x.png'/>
+      <Dot4 src='dot.png'/>
+      <Duga1 src='duga.png'/>
+      <Dot5 src='dot.png'/>
+      <T2 src='x.png'/>
+      <Dot6 src='dot.png'/>
+      <T4 src='triangle.png'/>
+      <Dot7 src='dot.png'/>
+     </Tilt>
       </Wrap>
     );
   }

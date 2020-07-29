@@ -10,7 +10,7 @@ const Cod = styled.div`
  
 `
 const Wrap = styled.div`
-
+background-color: #f8f8f8;
 height: 100vh;    
 `
 

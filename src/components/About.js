@@ -50,6 +50,7 @@ const H6 =  styled.span`
     width: 80%;
     margin-left:10%;
     margin-top: 10%;
+    font-size: 12px;
         }
      
 `
@@ -58,6 +59,7 @@ height: 1px;
 background-color: #6d5dfc;
 border: none;
 `
+
 function About() {
   return (
     <div id = 'about'>
@@ -67,7 +69,8 @@ function About() {
   <H6>About</H6>
         <Hr/>
         
-         <H6><Typing /></H6> 
+         <H6><Typing /></H6>
+    
       </Box>
     </Wrap>
     </div>
