@@ -30,12 +30,13 @@ z-index:1;
 `
 
 const H6 =  styled.span`
-  color:#1a1b1d;
-  text-shadow: 1px 2px 1px rgba(255,255,255,0.5);
-  font-family: 'Lato', sans-serif;
-  line-height: 2;
-  letter-spacing: 1px;
-  font-size: 14px;
+margin-top:5%;
+width: 100%;
+// margin-left:2%;
+word-spacing:9px;
+color:#414141;
+font-size: 14px;
+text-shadow: 1px 1px #fff;
   @media ${device.tablet} { 
     display: flex;
     flex-direction: column;

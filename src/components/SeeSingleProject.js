@@ -5,6 +5,8 @@ import Video from './Video'
 import Photos from './Photos'
 import ItemToProject from './ItemToProject'
 import { device } from '../device';
+
+
 const Arrow=styled.div`   
       margin-left: 2%;
 `
@@ -19,6 +21,10 @@ const L=styled.h6`
 `
 
 const Box = styled.div`
+display:flex;
+justify-content:center;
+flex-direction: column;
+// align-items: center;
 width: 80vw;
 height: 80vh;
 padding: 5vh 5vw;
@@ -39,6 +45,7 @@ background-color:#f8f8f8;
 justify-content: center;
 display: flex;
 align-items: center;
+
 @media ${device.tablet} { 
   height: 60vh;
       }
@@ -46,15 +53,21 @@ align-items: center;
 
 const P = styled.p`
      width:40%;
-     float:right;
-     position:relative;
-     margin-right:12%;
-     margin-left: 0%;
      line-height: 20px;
      font-size:14px;
-     @import url('https://fonts.googleapis.com/css?family=Lato');
      font-family: 'Lato', sans-serif;
      letter-spacing: 1px;
+     word-spacing:9px;
+     color:#414141;
+     font-size: 14px;
+     text-shadow: 1px 1px #fff;
+     margin:0;
+`
+const D=styled.div`
+display:flex;
+// justify-content:center;
+flex-direction: row;
+justify-content:space-around;
 `
 
 class SeeSingleProject extends React.Component{
@@ -102,11 +115,12 @@ class SeeSingleProject extends React.Component{
          {this.state.projects && this.state.projects.map(p=>{
                     return (
                     <Box key={p.id}>
-                        {/* <div>
+                        <D>
                             <P>{p.about}</P>
                             <Video key={p.id} project={p.url} />
-                        </div>
-                        <Photos key={p.id} project={p.images}/> */}
+                        </D>
+                        
+                        <Photos key={p.id} project={p.images}/>
                     </Box>)
                 })}
         </B>
