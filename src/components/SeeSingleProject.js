@@ -25,15 +25,13 @@ const L=styled.div`
 `
 
 const Box = styled.div`
-
+margin-top: 30px;
 display:flex;
 justify-content:center;
 flex-direction: column;
-// align-items: center;
 width: 80vw;
 height: 80vh;
 padding: 5vh 5vw;
-overflow: hidden;
 background-color: #495a74;
 color: transparent;
 text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.8);
@@ -41,8 +39,34 @@ text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.8);
 transition: box-shadow 0.7s ease-in-out;
 border-radius: 2px;
 box-shadow: 8px 8px 8px #a3b1c6, -8px -8px 8px rgba(255, 255, 255, 0.5), inset 1px 1px 1px #fff, inset -1px -1px 1px #a3b1c6;
-z-index:1;
+z-index: 1;
+position:relative;
+// ::before,::after{
+//   content: '';
+//   display: block;
+//   position:absolute;
+//   overflow:hidden;
+//   width: 100px;
+//   height: 100px;
+//   z-index: 0;
+// //   border-radius: 50%;
+// //   filter: blur(30px);
+// }
+// ::before{
+//     top:0px;
+//     right:0px;
+//     background: #ff008d;
+// }
+// ::after{
+//     bottom:0px;
+//     left:0px;
+//     background: #00ffe7;
+// }
 `
+
+
+
+
 const B = styled.div`
 height: 100vh;
 width:auto;

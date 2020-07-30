@@ -5,7 +5,7 @@ import {NavLink} from 'react-router-dom'
 function ItemToProject({link, children}) {
   console.log(children)
   return (
-        <NavLink style={{ textDecoration: 'none' }} to={link}>{children}</NavLink>
+        <NavLink style={{ textDecoration: 'none' ,padding:'2px',marginBottom:'0px' }} to={link}>{children}</NavLink>
   );
 }
 

@@ -22,6 +22,9 @@ const H1=styled.h1`
     background: url(https://i.pinimg.com/564x/48/a2/81/48a281139593319f3b13c8bc7b0f6e3b.jpg);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    @media screen and ${device.tablet} {
+            font-size: 1rem;
+       }
     animation: moveInUp 3s ease-in;
     @keyframes moveInUp {
       0% {
@@ -29,7 +32,13 @@ const H1=styled.h1`
       }
       100% {
         opacity: 1;
-      }    
+      }
+   
+
+//     @media only screen and (max-width: 900px) {
+//         font-size: 1rem; }
+//     @media only screen and (max-width: 675px) {
+//               font-size: 1rem; } 
 `
 
 const T1=styled.img`
@@ -38,6 +47,9 @@ const T1=styled.img`
       width:10px;
       height:10px;
       position:absolute;
+      @media screen and ${device.tablet} {
+            left:150px;
+       }
 `
 const T2=styled.img`
       top:140px;
@@ -53,6 +65,9 @@ const T3=styled.img`
       width:10px;
       height:10px;
       position:absolute;
+      @media screen and ${device.tablet} {
+            left:200px;
+       }
 `
 const T4=styled.img`
       top:160px;
@@ -60,6 +75,7 @@ const T4=styled.img`
       width:30px;
       height:30px;
       position:absolute;
+      
   `
 const T5=styled.img`
       top:200px;
@@ -67,7 +83,9 @@ const T5=styled.img`
       width:20px;
       height:20px;
       position:absolute;
-
+      @media screen and ${device.tablet} {
+            left:470px;
+       }
 `
 const T6=styled.img`
       top:300px;
@@ -91,6 +109,9 @@ const Duga1=styled.img`
       height:16px;
       transform:rotate(50deg);
       position:absolute;
+      @media screen and ${device.tablet} {
+            left:200px;
+       }
 `
 const Duga2=styled.img`
       top:3px;
@@ -106,6 +127,9 @@ const W=styled.img`
       width:45px;
       height:40px;
       position:absolute;
+      @media screen and ${device.tablet} {
+            left:150px;
+       }
 `
 const W1=styled.img`
       top:40px;
@@ -121,6 +145,9 @@ const W2=styled.img`
       height:20px;
       transform:rotate(30deg);
       position:absolute;
+      @media screen and ${device.tablet} {
+            left:400px;
+       }
 `
 const Dot1 =styled.img`
       top:3px;
@@ -142,6 +169,9 @@ const Dot3 =styled.img`
       width:30px;
       height:30px;
       position:absolute;
+      @media screen and ${device.tablet} {
+            left:420px;
+       }
 `
 const Dot4 =styled.img`
       top:5px;
@@ -149,6 +179,9 @@ const Dot4 =styled.img`
       width:30px;
       height:30px;
       position:absolute;
+      @media screen and ${device.tablet} {
+            left:350px;
+       }
 `
 const Dot5 =styled.img`
       top:15px;
@@ -156,6 +189,9 @@ const Dot5 =styled.img`
       width:30px;
       height:30px;
       position:absolute;
+      @media screen and ${device.tablet} {
+            left:250px;
+       }
 `
 const Dot6 =styled.img`
       top:150px;
@@ -170,6 +206,9 @@ const Dot7 =styled.img`
       width:30px;
       height:30px;
       position:absolute;
+      @media screen and ${device.tablet} {
+            left:300px;
+       }
     `
 const Dot8 =styled.img`
       top:150px;
@@ -177,6 +216,9 @@ const Dot8 =styled.img`
       width:30px;
       height:30px;
       position:absolute;
+      @media screen and ${device.tablet} {
+            left:280px;
+       }
         `
 const Dot9 =styled.img`
       top:120px;
@@ -184,6 +226,9 @@ const Dot9 =styled.img`
       width:30px;
       height:30px;
       position:absolute;
+      @media screen and ${device.tablet} {
+            left:300px;
+       }
             `
 const Dot10 =styled.img`
       top:400px;
@@ -191,6 +236,9 @@ const Dot10 =styled.img`
       width:30px;
       height:30px;
       position:absolute;
+      @media screen and ${device.tablet} {
+            left:20px;
+       }
            `
 const Dot11=styled.img`
       top:500px;
@@ -205,6 +253,9 @@ const Dot12=styled.img`
       width:30px;
       height:30px;
       position:absolute;
+      @media screen and ${device.tablet} {
+            left:20px;
+       }
 `
 const Dot13=styled.img`
       top:600px;
@@ -219,6 +270,9 @@ const Dot14 =styled.img`
       width:30px;
       height:30px;
       position:absolute;
+      @media screen and ${device.tablet} {
+            left:100px;
+       }
 `
 const Duga3=styled.img`
       top:500px;
@@ -227,6 +281,9 @@ const Duga3=styled.img`
       height:26px;
       transform:rotate(100deg);
       position:absolute;
+      @media screen and ${device.tablet} {
+            left:300px;
+       }
 ` 
 const Tri=styled.img`
       top:600px;
@@ -235,6 +292,9 @@ const Tri=styled.img`
       height:20px;
       transform:rotate(180deg);
       position:absolute;
+      @media screen and ${device.tablet} {
+            left:200px;
+       }
     ` 
 const Tri1=styled.img`
       top:550px;
@@ -257,6 +317,9 @@ const X1=styled.img`
       width:10px;
       height:10px;
       position:absolute;
+      @media screen and ${device.tablet} {
+            left:100px;
+       }
       ` 
 const Tri2=styled.img`
       top:550px;
@@ -265,6 +328,9 @@ const Tri2=styled.img`
       height:20px;
       transform:rotate(90deg);
       position:absolute;
+      @media screen and ${device.tablet} {
+            left:150px;
+       }
     ` 
 const Duga4=styled.img`
       top:500px;
@@ -281,6 +347,10 @@ const W4=styled.img`
       height:40px;
       position:absolute;
       transform:rotate(80deg);
+      @media screen and ${device.tablet} {
+            left:280px;
+            top:600px;
+       }
 `  
 const X5=styled.img`
       top:580px;
@@ -288,6 +358,8 @@ const X5=styled.img`
       width:10px;
       height:10px;
       position:absolute;
+      @media screen and ${device.tablet} {
+            left:380px;}
 ` 
 const Duga5=styled.img`
       top:300px;
@@ -296,6 +368,9 @@ const Duga5=styled.img`
       height:26px;
       transform:rotate(180deg);
       position:absolute;
+      @media screen and ${device.tablet} {
+            left:380px;
+            top:400px;}
 ` 
 const Tri3=styled.img`
       top:500px;
@@ -304,6 +379,10 @@ const Tri3=styled.img`
       height:30px;
       transform:rotate(130deg);
       position:absolute;
+      @media screen and ${device.tablet} {
+            left:380px;
+          }
+      
     `            
 class Home extends React.Component {
   render(){

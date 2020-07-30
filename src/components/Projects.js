@@ -15,17 +15,16 @@ const Arrow=styled.div`
       margin-left: 2%;
 `
 const L=styled.div`  
-    margin: 2%;
-    cursor: pointer; 
-    font-size: small;
-    font-weight: 300;
-    color:#26282a;
-    font-family: 'Lato', sans-serif;
-    margin:0%;
-    &:hover{
-        color:#a8a7d1;
-        font-weight: 600;
-    }
+cursor: pointer; 
+font-size: small;
+font-weight: 300;
+color:#26282a;
+font-family: 'Lato', sans-serif;
+margin:0%;
+&:hover{
+    color:#a8a7d1;
+    font-weight: 600;
+}
 `
 const Grid=styled.div`
 display: grid;

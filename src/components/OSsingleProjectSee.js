@@ -15,7 +15,7 @@ const Wrap = styled.div`
     
 `
 const H6=styled.h6`
-    margin: 2%;
+   
     cursor: pointer; 
     font-size: small;
     font-weight: 300;
