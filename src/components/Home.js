@@ -2,12 +2,13 @@ import React from 'react';
 import styled from 'styled-components'
 import { device } from '../device';
 import Tilt from 'react-parallax-tilt';
+
 const Wrap=styled.div`
     height: 100vh;
     width:auto;
 `
 const H1=styled.h1`
-z-index: 1;
+    z-index: 1;
     font-family: 'Lato', sans-serif;
     position: absolute;
     top:50%;
@@ -18,72 +19,54 @@ z-index: 1;
     font-weight: bolder;
     font-size: 2rem;
     line-height: 2.5rem;
-    @media only screen and (max-width: 870px) {
-        font-size: 1.5rem; }
-    @media only screen and (max-width: 785px) {
-        font-size: 1rem; }
-    @media only screen and (max-width: 660px) {
-        font-size: 0.8rem; }
-    @media only screen and (max-width: 600px) {
-        font-size: 0.6rem; }
-    @media only screen and (max-width: 560px) {
-        font-size: 0.2rem; }
-    @media only screen and (max-width: 530px) {
-        font-size: 0.2rem; }
     background: url(https://i.pinimg.com/564x/48/a2/81/48a281139593319f3b13c8bc7b0f6e3b.jpg);
-    
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-    // color:#6d5dfc;
-    animation: moveInUp 4s ease-out;
-    // text-shadow: 3px 3px 3px #f2f3f6;
+    animation: moveInUp 3s ease-in;
     @keyframes moveInUp {
       0% {
         opacity: 0;
-        // transform: translateY(10rem); 
       }
-       
       100% {
         opacity: 1;
-        // transform: translateY(0) } 
-      }
-     
+      }    
 `
-const T4=styled.img`
-top:160px;
-left:400px;
-width:30px;
-height:30px;
-position:absolute;
-  `
+
 const T1=styled.img`
-top:40px;
-left:750px;
-width:10px;
-height:10px;
-position:absolute;
+      top:40px;
+      left:750px;
+      width:10px;
+      height:10px;
+      position:absolute;
 `
 const T2=styled.img`
-top:140px;
-left:100px;
-width:10px;
-height:10px;
-position:absolute;
+      top:140px;
+      left:100px;
+      width:10px;
+      height:10px;
+      position:absolute;
 `
 
 const T3=styled.img`
-top:150px;
-left:1200px;
-width:10px;
-height:10px;
-position:absolute;
+      top:150px;
+      left:1200px;
+      width:10px;
+      height:10px;
+      position:absolute;
 `
+const T4=styled.img`
+      top:160px;
+      left:400px;
+      width:30px;
+      height:30px;
+      position:absolute;
+  `
 const T5=styled.img`
-top:200px;
-left:1100px;
-width:20px;
-height:20px;
-position:absolute;
+      top:200px;
+      left:1100px;
+      width:20px;
+      height:20px;
+      position:absolute;
 
 `
 const T6=styled.img`
@@ -231,7 +214,7 @@ const Dot13=styled.img`
       position:absolute;
 `
 const Dot14 =styled.img`
-      top:700px;
+      top:600px;
       left:800px;
       width:30px;
       height:30px;
@@ -254,42 +237,42 @@ const Tri=styled.img`
       position:absolute;
     ` 
 const Tri1=styled.img`
-    top:550px;
-    left:400px;
-    width:10px;
-    height:10px;
-    transform:rotate(90deg);
-    position:absolute;
+      top:550px;
+      left:400px;
+      width:10px;
+      height:10px;
+      transform:rotate(90deg);
+      position:absolute;
   `
 const X=styled.img`
-  top:700px;
-  left:400px;
-  width:10px;
-  height:10px;
-  position:absolute;
+      top:400px;
+      left:100px;
+      width:10px;
+      height:10px;
+      position:absolute;
     ` 
 const X1=styled.img`
-    top:600px;
-    left:700px;
-    width:10px;
-    height:10px;
-    position:absolute;
+      top:350px;
+      left:700px;
+      width:10px;
+      height:10px;
+      position:absolute;
       ` 
 const Tri2=styled.img`
       top:550px;
       left:1150px;
       width:20px;
       height:20px;
-      transform:rotate(900deg);
+      transform:rotate(90deg);
       position:absolute;
     ` 
 const Duga4=styled.img`
-    top:500px;
-    left:160px;
-    width:30px;
-    height:26px;
-    transform:rotate(20deg);
-    position:absolute;
+      top:500px;
+      left:160px;
+      width:30px;
+      height:26px;
+      transform:rotate(20deg);
+      position:absolute;
 `     
 const W4=styled.img`
       top:350px;
@@ -300,12 +283,28 @@ const W4=styled.img`
       transform:rotate(80deg);
 `  
 const X5=styled.img`
-    top:680px;
-    left:1380px;
-    width:10px;
-    height:10px;
-    position:absolute;
-      `             
+      top:580px;
+      left:1380px;
+      width:10px;
+      height:10px;
+      position:absolute;
+` 
+const Duga5=styled.img`
+      top:300px;
+      left:500px;
+      width:30px;
+      height:26px;
+      transform:rotate(180deg);
+      position:absolute;
+` 
+const Tri3=styled.img`
+      top:500px;
+      left:690px;
+      width:30px;
+      height:30px;
+      transform:rotate(130deg);
+      position:absolute;
+    `            
 class Home extends React.Component {
   render(){
     return (
@@ -347,6 +346,8 @@ class Home extends React.Component {
       <Duga4 src='duga.png'/>
       <W4 src='wave.png'/>
       <X5 src='x.png'/>
+      <Duga5 src='duga.png'/>
+      <Tri3 src='triangle.png'/>
       </Wrap>
     );
   }

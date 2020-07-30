@@ -6,10 +6,11 @@ import {Link} from 'react-router-dom'
 
 
 const A=styled.a`
-    font-size: 25px;
+    font-size: 18px;
     padding:2%;
     // margin:2%;
     color:#6d5dfc;
+
 
 `
 
@@ -29,12 +30,11 @@ const Card = styled.div`
     transition: box-shadow 0.7s ease-in-out;
     border-radius: 2px;
     box-shadow: 8px 8px 8px #a3b1c6, -8px -8px 8px rgba(255, 255, 255, 0.5), inset 1px 1px 1px #fff, inset -1px -1px 1px #a3b1c6;
-    z-index:1;
 `
 const P = styled.p`
 // margin-left:5%;
-color: #1a1b1d;
-//  font-size: 25px;
+color:#414141;
+font-size: 16px;
 `
 const I = styled.img`
 filter: grayscale(80%);
@@ -50,7 +50,12 @@ justify-content:space-around;
 const Box = styled.div`
     padding:10px;
 `
-
+const P1=styled.div`
+   line-height: normal;
+   font-size: 14px;
+   color:#414141;
+   width:60%;
+`
 
 const SingleProjectOS =(props)=>{
         console.log(props)
@@ -60,11 +65,14 @@ const SingleProjectOS =(props)=>{
                 <P>
                     {props.project.title}
                 </P>
+                <P1>
+                {props.project.about}
+                </P1>
                 <Icons>
                     <Box>
                     <Link to={{pathname: `/os`}}>
                         
-                        <A cursor='pointer' ><i class="fa fa-info" aria-hidden="true"></i></A>
+                        <A cursor='pointer'  ><i class="fa fa-info" aria-hidden="true"></i></A>
                     </Link>
                     </Box>
                     <Box>

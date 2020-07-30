@@ -69,7 +69,6 @@ text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.8);
 transition: box-shadow 0.7s ease-in-out;
 border-radius: 2px;
 box-shadow: 8px 8px 8px #a3b1c6, -8px -8px 8px rgba(255, 255, 255, 0.5), inset 1px 1px 1px #fff, inset -1px -1px 1px #a3b1c6;
-z-index:1;
 `
 const I=styled.img`
  width:50px;
@@ -93,7 +92,7 @@ const LinkToProjects=() =>{
      <Box>
      <L>
       Projects
-      <ItemToProject link='projects' >
+    <ItemToProject link='projects' >
       <Arrow>
       <i padding-left='5%' color='#6d5dfc' text-decoration='none' cursor='pointer' class="fa fa-arrow-circle-right"  aria-hidden="true"></i>
       </Arrow>

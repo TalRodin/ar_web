@@ -43,28 +43,16 @@ const Container = styled.div`
 // z-index:12;
     `
 const H = styled.h3`
-    color: #1a1b1d;
-    font-size:18px;
-    line-height: 18px;
-    text-shadow: 1px 1px #fff;
-    text-align: center;
-    font-weight: normal;
-    // position:relative;
+color:#414141;
+    text-shadow: 1px 2px 1px rgba(255,255,255,0.5);
     font-family: 'Lato', sans-serif;
-    @media ${device.tablet} {
-      font-size:20px;
-    }
-    animation: appearing 4s ease-out;
-    @keyframes appearing {
-      0% {
-        opacity: 0;
-         }
-      100% {
-        opacity: 1;
-         }
+    line-height: 2;
+    letter-spacing: 1px;
+    font-size: 16px;
+    text-align:center;
 `
 const Keywords= styled.div`
-    color:#1a1b1d;
+color:#414141;
     text-align: left;
     margin-left:25%;
     font-size:12px;
