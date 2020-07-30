@@ -15,9 +15,18 @@ const Wrap = styled.div`
     
 `
 const H6=styled.h6`
-    margin: 0px;
-    text-decoration: none !important;
-    cursor: pointer;  
+    margin: 2%;
+    cursor: pointer; 
+    font-size: small;
+    font-weight: 300;
+    color:#26282a;
+    font-family: 'Lato', sans-serif;
+    margin:0%;
+    &:hover{
+        color:#a8a7d1;
+        font-weight: 600;
+    }
+
 `
 class OSsingleProjectSee extends React.Component{
     render(){

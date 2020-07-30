@@ -50,17 +50,7 @@ const A=styled.h6`
         color:#a8a7d1;
         font-weight: 600;
     }
-    
-    @media only screen and (max-width: 700px) {
-        font-size: 10px;}
-    @media only screen and (max-width: 660px) {
-        font-size: 10px;}
-    @media only screen and (max-width: 600px) {
-        font-size: 10px;}
-    @media only screen and (max-width: 560px) {
-        font-size: 10px;}
-    @media only screen and (max-width: 530px) {
-        font-size: 10px;}
+
 `
 const Input=styled.input`
     height:6px; 
