@@ -155,6 +155,7 @@ const LinkToProjects=() =>{
         System Design
         AWS lambda
         AWS DynomoDB
+        Netlify
       </P>
       <I src='lavander.png'/>
       </Box>
