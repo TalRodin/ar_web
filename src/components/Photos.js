@@ -7,7 +7,7 @@ import styled from 'styled-components'
 const Container = styled.div`
 margin: 0 auto;
 // padding: 0px 20px 20px 20px;
-width: 1200px;
+width: 800px;
 // height: 180px;
 // top:20%;
 margin-top:3%;
@@ -25,11 +25,10 @@ export default class Photos extends Component {
     render() {
       console.log(this.props.project)
       var settings = {
-        
+        infinite: true,
         dots: true,
-        infinite: false,
         speed: 500,
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 1,
         initialSlide: 0,
         responsive: [

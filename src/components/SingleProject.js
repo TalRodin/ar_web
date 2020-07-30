@@ -34,7 +34,7 @@ const P = styled.p`
     line-height: normal;
     margin-top:5%;
     width: 100%;
-    word-spacing:9px;
+    padding-left:15px;
     color:#414141;
     font-size: 14px;
     text-shadow: 1px 1px #fff;
@@ -43,29 +43,29 @@ const P = styled.p`
 const Size=styled.div`
     background-color:#fbfbfb;
     border-radius: 50px;
-    margin:2%;
-    height:6%;
+    margin:6%;
+    height:4%;
     border: 0.5px solid #f2f3f6;
     box-shadow: inset 0.5px 0.5px 3.5px #BABECC, inset -3.5px -3.5px 8.5px #FFF;
-
+    width:50%;
 `
 const D=styled.div`
     background:#6d5dfc;
     border-radius: 60px;
-    height:9px;
+    height:5px;
     margin:2px;
 `
 
 const I = styled.img`
       width:200px;
       height:200px;
-      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.6);
+    //   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
       filter: grayscale(80%);
 `
 const C =styled.div`
       width:201px;
       height:201px;
-      border: 0.5px solid #f2f3f6;
+    //   border: 0.5px solid #f2f3f6;
 `
 
 const SingleProject =(props)=>{
@@ -84,7 +84,8 @@ const SingleProject =(props)=>{
                   }}>
                    <A cursor='pointer'><i  class="fa fa-info" aria-hidden="true"></i></A>
               </Link>
-              <A href={`${props.project.github}`} cursor='pointer' class="icon-link" title="Follow us on Github"><i class="fab  fa-github"></i></A>
+              <A href={`${props.project.github}`} cursor='pointer' class="icon-link" ><i class="fab  fa-github"></i></A>
+              <A href={`${props.project.link}`} cursor='pointer'><i class="fa fa-link" aria-hidden="true"></i></A>
               </P>
             <Size className="progress"> 
             <D  style={{width:`${(props.project.size/5)*100}%`}}></D>
