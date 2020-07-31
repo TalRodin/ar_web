@@ -1,0 +1,23 @@
+.neumorphism-card-wrap{
+    position:relative;
+}
+.neumorphism-card-wrap::before, .neumorphism-card-wrap::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: 0;
+    border-radius: 50%;
+    filter: blur(30px);
+  }
+  .neumorphism-card-wrap::before{
+    top:0;
+    right:0;
+    background: #ff008d;
+  }
+  .neumorphism-card-wrap::after{
+    bottom:0;
+    left:0;
+    background: #00ffe7;
+  }

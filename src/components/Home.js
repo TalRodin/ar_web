@@ -50,6 +50,7 @@ const T1=styled.img`
       @media screen and ${device.tablet} {
             left:150px;
        }
+    
 `
 const T2=styled.img`
       top:140px;
@@ -57,6 +58,7 @@ const T2=styled.img`
       width:10px;
       height:10px;
       position:absolute;
+   
 `
 
 const T3=styled.img`
@@ -65,6 +67,7 @@ const T3=styled.img`
       width:10px;
       height:10px;
       position:absolute;
+   
       @media screen and ${device.tablet} {
             left:200px;
        }
@@ -83,6 +86,7 @@ const T5=styled.img`
       width:20px;
       height:20px;
       position:absolute;
+      
       @media screen and ${device.tablet} {
             left:470px;
        }
@@ -94,6 +98,7 @@ const T6=styled.img`
       height:20px;
       transform:rotate(180deg);
       position:absolute;
+    
     `
 const Duga=styled.img`
       top:250px;
@@ -101,6 +106,7 @@ const Duga=styled.img`
       width:20px;
       height:16px;
       position:absolute;
+    
 `
 const Duga1=styled.img`
       top:10px;
@@ -109,6 +115,7 @@ const Duga1=styled.img`
       height:16px;
       transform:rotate(50deg);
       position:absolute;
+    
       @media screen and ${device.tablet} {
             left:200px;
        }
@@ -120,6 +127,7 @@ const Duga2=styled.img`
       height:26px;
       transform:rotate(100deg);
       position:absolute;
+    
 `
 const W=styled.img`
       top:200px;
@@ -127,6 +135,7 @@ const W=styled.img`
       width:45px;
       height:40px;
       position:absolute;
+    
       @media screen and ${device.tablet} {
             left:150px;
        }
@@ -137,6 +146,7 @@ const W1=styled.img`
       width:35px;
       height:20px;
       position:absolute;
+     
 `
 const W2=styled.img`
       top:3px;
@@ -145,6 +155,7 @@ const W2=styled.img`
       height:20px;
       transform:rotate(30deg);
       position:absolute;
+      
       @media screen and ${device.tablet} {
             left:400px;
        }
@@ -155,6 +166,7 @@ const Dot1 =styled.img`
       width:30px;
       height:30px;
       position:absolute;
+     
 `
 const Dot2 =styled.img`
       top:30px;
@@ -162,6 +174,7 @@ const Dot2 =styled.img`
       width:30px;
       height:30px;
       position:absolute;
+      
 `
 const Dot3 =styled.img`
       top:50px;
@@ -169,6 +182,7 @@ const Dot3 =styled.img`
       width:30px;
       height:30px;
       position:absolute;
+   
       @media screen and ${device.tablet} {
             left:420px;
        }
@@ -179,6 +193,7 @@ const Dot4 =styled.img`
       width:30px;
       height:30px;
       position:absolute;
+  
       @media screen and ${device.tablet} {
             left:350px;
        }
@@ -199,6 +214,7 @@ const Dot6 =styled.img`
       width:30px;
       height:30px;
       position:absolute;
+
 `
 const Dot7 =styled.img`
       top:150px;
@@ -206,6 +222,7 @@ const Dot7 =styled.img`
       width:30px;
       height:30px;
       position:absolute;
+
       @media screen and ${device.tablet} {
             left:300px;
        }
@@ -216,6 +233,7 @@ const Dot8 =styled.img`
       width:30px;
       height:30px;
       position:absolute;
+
       @media screen and ${device.tablet} {
             left:280px;
        }
@@ -226,6 +244,7 @@ const Dot9 =styled.img`
       width:30px;
       height:30px;
       position:absolute;
+
       @media screen and ${device.tablet} {
             left:300px;
        }
@@ -236,6 +255,7 @@ const Dot10 =styled.img`
       width:30px;
       height:30px;
       position:absolute;
+
       @media screen and ${device.tablet} {
             left:20px;
        }

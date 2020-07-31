@@ -9,7 +9,7 @@ const A=styled.a`
     font-size: 18px;
     padding:2%;
     // margin:2%;
-    color:#6d5dfc;
+    color:#d1ddee;  
 
 
 `

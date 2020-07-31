@@ -11,6 +11,7 @@ const A=styled.a`
 `
 
 const Card = styled.div`
+        margin-top:10%;
         display: grid;
         grid-template-columns: 1fr 1fr ;
         border:10px solid rgba(235,236,240,0.9);
