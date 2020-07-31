@@ -100,62 +100,65 @@ const LinkToProjects=() =>{
     </L>
     <Hr />
     <P>
-        Python
-        JavaScript
-        React
-        Firebase
-        Nodejs
-        CSS
-        HTML
-        styled-components
-        D3js
-        AWS
-        React
-        Redux
-        Nodejs
-        Express
-        PostgreSQL (data analyses)
-        Sequelize
-        Relational Model
-        Normalization
-        Heroku
-        CSS
-        HTML5
-        Bootstrap
-        Material UI
-        SVG
-        Webpack
-        npm
-        VSCode
-        Anaconda
-        Git
-        Github
-        Lucid-Chart
-        Postman
-        Mocha
-        Chai
-        Jest
-        Tableau
-        Plotly
-        R
-        C++
-        PHP
-        MATLAB
-        SPSS
-        AGILE Methodology
-        REST API
-        Flask
-        Machine Learning
-        NLP
-        Data Modeling and Evaluation
-        Building predictive models
-        Google OAuth
-        Babel
-        Data Structures and Algorithms
-        System Design
-        AWS lambda
-        AWS DynomoDB
-        Netlify
+        Python ∙
+        JavaScript ∙
+        React ∙
+        Firebase ∙
+        Nodejs ∙
+        CSS ∙
+        HTML ∙
+        styled-components ∙
+        D3js ∙
+        AWS ∙
+        React ∙
+        Redux ∙
+        Nodejs ∙
+        Express ∙
+        PostgreSQL (data analyses) ∙
+        Sequelize ∙
+        Relational Model ∙
+        Normalization ∙
+        Heroku ∙
+        CSS ∙
+        HTML5 ∙
+        Bootstrap ∙
+        Material UI ∙
+        SVG ∙
+        Webpack ∙
+        npm ∙
+        VSCode ∙
+        Anaconda ∙
+        Git ∙
+        Github ∙
+        Lucid-Chart ∙
+        Postman ∙
+        Mocha ∙
+        Chai ∙
+        Jest ∙
+        Tableau ∙
+        Plotly ∙
+        R ∙
+        C++ ∙
+        PHP ∙
+        MATLAB ∙
+        SPSS ∙
+        AGILE Methodology ∙
+        REST API ∙
+        Flask ∙
+        Machine Learning ∙
+        NLP ∙
+        Data Modeling and Evaluation ∙
+        Building predictive models ∙
+        Google OAuth ∙
+        Babel ∙
+        Data Structures and Algorithms ∙
+        System Design ∙
+        AWS lambda ∙
+        AWS DynomoDB ∙
+        S3 ∙
+        Route53 ∙
+        Netlify ∙
+        Nextjs
       </P>
       <I src='lavander.png'/>
       </Box>
