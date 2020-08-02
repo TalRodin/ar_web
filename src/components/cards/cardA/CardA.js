@@ -1,35 +1,41 @@
 import React from 'react';
-import img from './cardA.jpeg';
-import './cardA.css';
+
+import img from './cardA.png';
+
+
 import styled from 'styled-components'
-
-
-const headerImg = {
+const backgroundImg = {
   backgroundImage: `url(${img})`,
   backgroundSize: 'cover',
-  backgroundPosition: '0 -75px',
   backgroundRepeat: 'no-repeat',
-  height: 100,
-  width: '100%',
-  opacity: '1',
+  height: 356,
+  width:650,
   position: 'relative',
-  zIndex: 500
+  zIndex: 1
 };
+const D= styled.div` 
+  // width:autp;
+  // height: 100vh;
 
-
-const D=styled.div`
-   
+`
+const A=styled.a`
+    font-size: 18px;
+    padding-right:5%;
+    padding-top:45%;
+    float:right;
+    color:#d1ddee;  
 `
 
 export default (props) => (
-  <D className="cardA">
-    <header className="cardA-header" style={headerImg}></header>
-    <main className="cardA-body">
+  <D  style={backgroundImg}>
+    <header >
+    
+    </header>
+    <main >
       
     </main>
-    <footer className="cardA-footer">
-      <i className="ico far fa-heart" title="add as favorite"></i>
-     
+    <footer >
+    <A href={`https://github.com/TalRodin/D3js-react/tree/master/src/components/LineBarChart`} cursor='pointer' class="icon-link" title="Follow us on Github"><i class="fab  fa-github"></i></A>
     </footer>
   </D>
 );

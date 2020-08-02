@@ -44,7 +44,7 @@ const H6=styled.h6`
 `
 const RC=styled.div`
     float:right;
-    padding-right:30%;
+    
 `
 
 class OSsingleProjectSee extends React.Component{

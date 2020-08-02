@@ -1,31 +1,41 @@
 import React from 'react';
-import './cardB.css';
-import img from './cardB.jpeg';
+// import './cardB.css';
+import img from './cardB.png';
 
 
+import styled from 'styled-components'
 const backgroundImg = {
   backgroundImage: `url(${img})`,
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
-  height: 100,
+  height: 356,
+  width:650,
   position: 'relative',
   zIndex: 1
 };
+const D= styled.div` 
+  // width:aut0;
+  // height: 100vh;
 
+`
+
+const A=styled.a`
+    font-size: 18px;
+    padding-right:5%;
+    padding-top:45%;
+    float:right;
+    color:#d1ddee;  
+`
 export default (props) => (
-  <aside className="cardB" style={backgroundImg}>
-    <header className="cardB-header">
-      <h1 className="cardB-title center">Guardians of the Galaxy</h1>
+  <D  style={backgroundImg}>
+    <header >
+    
     </header>
-    <main className="cardB-body">
-      <p>
-        A group of intergalactic criminals are forced to work together to stop a fanatical warrior from taking control of the universe.
-      </p>
-    </main>
-    <footer className="cardB-footer">
-      <i className="ico far fa-heart" title="add as favorite"></i>
-      <i className="ico fas fa-share-alt" title="share"></i>
-      <i className="ico fab fa-instagram" title="post on Instagram"></i>
+    <aside >
+     
+    </aside>
+    <footer >
+    <A href={`https://github.com/TalRodin/D3js-react/tree/master/src/components/LineBarChart`} cursor='pointer' class="icon-link" title="Follow us on Github"><i class="fab  fa-github"></i></A>
     </footer>
-  </aside>
+  </D>
 );

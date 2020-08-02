@@ -79,9 +79,7 @@ function About() {
         
   <H7 >About</H7>
         <Hr/>
-        
          <H6><Typing /></H6>
-    
       </Box>
     </Wrap>
     </div>
