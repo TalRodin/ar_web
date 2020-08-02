@@ -71,12 +71,11 @@ const SingleProjectOS =(props)=>{
                 <Icons>
                     <Box>
                     <Link to={{pathname: `/os`}}>
-                        
-                        <A cursor='pointer'  ><i class="fa fa-info" aria-hidden="true"></i></A>
+                        <A cursor='pointer'><i class="fa fa-info" aria-hidden="true"></i></A>
                     </Link>
                     </Box>
                     <Box>
-                    <A href={`${props.project.github}`} cursor='pointer' class="icon-link" title="Follow us on Github"><i class="fab  fa-github"></i></A>
+                        <A href={`${props.project.github}`} cursor='pointer' class="icon-link" title="Follow us on Github"><i class="fab  fa-github"></i></A>
                     </Box>
                 </Icons>
             </Card>

@@ -1,2 +1,2 @@
-export { default as CardA } from './cardA/CardA';
-export { default as CardB } from './cardB/CardB';
+export { default as LineBarA } from './cardA/CardA';
+export { default as LineBarB } from './cardB/CardB';
