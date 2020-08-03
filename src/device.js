@@ -5,7 +5,7 @@ const size = {
     tablet: '768px',
     laptop: '1024px',
     laptopL: '1440px',
-    desktop: '2560px'
+    desktop: '2560px',
   }
 
   export const device = {
@@ -20,3 +20,8 @@ const size = {
   };
 
 
+  // smallest: `only screen and (max-width: 25em)`, 400px
+  // small: `only screen and (max-width: 37.5em)`, 600px
+  // medium: `only screen and (max-width: 56em)`, 896px
+  // large: `only screen and (max-width: 80em)`, 1280px
+  // largest: `only screen and (max-width: 90em)`, 1440px

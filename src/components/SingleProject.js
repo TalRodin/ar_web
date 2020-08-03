@@ -68,32 +68,36 @@ const C =styled.div`
       height:201px;
     //   border: 0.5px solid #f2f3f6;
 `
-
-const SingleProject =(props)=>{
-        console.log(props)
-        return (
+class SingleProject extends React.Component{
+    constructor(){
+        super()
+    }
+    render(){
+        
+        return(
             <Card>
                <C>
-                    <I src={`${props.project.thumbnail}`} />
+                    <I src={`${this.props.project.thumbnail}`} />
                </C>
                <div>
                <P>
-              {props.project.title}</P>
+              {this.props.project.title}</P>
               <P>
               <Link to={{
-                  pathname: `/projects/${props.project.id}`
+                  pathname: `/projects/${this.props.project.id}`
                   }}>
                    <A cursor='pointer'><i  class="fa fa-info" aria-hidden="true"></i></A>
               </Link>
-              <A href={`${props.project.github}`} cursor='pointer' class="icon-link" ><i class="fab  fa-github"></i></A>
-              <A href={`${props.project.link}`} cursor='pointer'><i class="fa fa-link" aria-hidden="true"></i></A>
+              <A href={`${this.props.project.github}`} cursor='pointer' class="icon-link" ><i class="fab  fa-github"></i></A>
+              {this.props.project.link && <A href={`${this.props.project.link}`} cursor='pointer'><i class="fa fa-link" aria-hidden="true"></i></A>}
               </P>
             <Size className="progress"> 
-            <D  style={{width:`${(props.project.size/5)*100}%`}}></D>
+            <D  style={{width:`${(this.props.project.size/5)*100}%`}}></D>
             </Size>
            </div>
             </Card>
         )
     }
+}
 
 export default SingleProject

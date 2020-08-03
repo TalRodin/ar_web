@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import {db} from '../Firebase'
 import Video from './Video'
 import Photos from './Photos'
-import ItemToProject from './ItemToProject'
 import { device } from '../device';
 import {NavLink} from 'react-router-dom';
 
@@ -15,10 +14,7 @@ const L=styled.div`
     color:#26282a;
     font-family: 'Lato', sans-serif;
     margin:0;
-    &:hover{
-        color:#a8a7d1;
-        font-weight: 600;
-    }
+   
 `
 const Box = styled.div`
     top:10%;

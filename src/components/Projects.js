@@ -18,10 +18,7 @@ const L=styled.div`
   color:#26282a;
   font-family: 'Lato', sans-serif;
   margin:0%;
-  &:hover{
-      color:#a8a7d1;
-      font-weight: 600;
-  }
+
 `
 const Grid=styled.div`
   display: grid;
