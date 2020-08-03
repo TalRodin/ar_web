@@ -8,17 +8,13 @@ import {Link} from 'react-router-dom'
 const A=styled.a`
     font-size: 18px;
     padding:2%;
-    // margin:2%;
     color:#d1ddee;  
-
-
 `
 
 const Card = styled.div`
     display:flex;
     flex-direction: column;
     align-items:center;
-    
     width: 60vw;
     height: 60vh;
     padding: 5vh 5vw;
@@ -32,9 +28,9 @@ const Card = styled.div`
     box-shadow: 8px 8px 8px #a3b1c6, -8px -8px 8px rgba(255, 255, 255, 0.5), inset 1px 1px 1px #fff, inset -1px -1px 1px #a3b1c6;
 `
 const P = styled.p`
-// margin-left:5%;
 color:#414141;
 font-size: 16px;
+font-family: 'Lato', sans-serif;
 `
 const I = styled.img`
 filter: grayscale(80%);
@@ -42,7 +38,6 @@ filter: grayscale(80%);
 const Icons = styled.div`
 display:flex;
 flex-direction: row;
-// align-items:center;
 justify-content:space-around;
 
 `
@@ -55,6 +50,7 @@ const P1=styled.div`
    font-size: 14px;
    color:#414141;
    width:60%;
+   font-family: 'Lato', sans-serif;
 `
 
 const SingleProjectOS =(props)=>{

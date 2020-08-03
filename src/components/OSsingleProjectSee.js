@@ -10,8 +10,6 @@ const Cod = styled.div`
     top:10%;
     left:4%;
     display:flex;
-    // justify-content:center;
-    // align-items:center;
     flex-direction: column;
     width: 70vw;
     height: 70vh;
@@ -38,11 +36,12 @@ const H6=styled.h6`
     margin:0;
     &:hover{
         color:#a8a7d1;
-        font-weight: 600;
     }
 `
 const RC=styled.div`
     float:right;
+    padding-top:6%;
+    padding-right:6%;
 `
 
 class OSsingleProjectSee extends React.Component{
@@ -74,7 +73,7 @@ class OSsingleProjectSee extends React.Component{
         return (
             <div style={{}}>
             {/* <label style={{textAlign: 'center',width: '100%'}}></label> */}
-            <select style={{padding:'3px', outline:'0px', transform: 'translateZ(0)', filter:'drop-shadow(0px 10px 5px black)', fontSize: '16px',borderRadius: '16px',cursor: 'pointer',color:'#26282a',border:' 2px dotted black',width: '10rem',appearance: 'none',backgroundColor: 'transparent'}}
+            <select style={{padding:'4px', outline:'0px', transform: 'translateZ(0)', filter:'drop-shadow(0px 10px 5px black)', fontSize: '16px',borderRadius: '16px',cursor: 'pointer',color:'#26282a',border:' 2px dotted black',width: '10rem',appearance: 'none',backgroundColor: 'transparent'}}
               onChange={(e) => this.setState({ selectedCardType: e.target.value })}>
               <option ></option>
               <option>LineBarA</option>
@@ -85,7 +84,7 @@ class OSsingleProjectSee extends React.Component{
       }
     renderSelectedCard(selectedCardType) {
         if (!selectedCardType)
-          return <FirstPage text="Select" />;
+          return <FirstPage text="Select chart" />;
         const Card = Cards[selectedCardType];
         return <Card />;
         

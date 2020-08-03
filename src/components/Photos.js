@@ -7,8 +7,8 @@ import styled from 'styled-components'
 const Container = styled.div`
 margin: 0 auto;
 // padding: 0px 20px 20px 20px;
-width: 800px;
-// height: 180px;
+width: 860px;
+// height: 100px;
 // top:20%;
 margin-top:3%;
 // position:relative;
@@ -16,7 +16,7 @@ margin-top:3%;
 `
 
 const Border = styled.div`
-padding-left:10%
+padding-left:5%
 
 `
 

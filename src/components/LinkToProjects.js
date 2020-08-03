@@ -13,34 +13,18 @@ const Wrap=styled.div`
     justify-content: center;
     display: flex;
     align-items: center;
-    color:#414141;
-    
+    color:#414141; 
 `
 const L=styled.span`  
-display:flex;
-flex-direction: row;
-// align-items:center;
-justify-content:space-between;
-
+        display:flex;
+        flex-direction: row;
+        justify-content:space-between;
         color:#414141;
         font-family: 'Lato', sans-serif;
         font-size: 16px;
         text-shadow: 1px 1px #fff;
-        // text-align:right;
-        // float:right;
-        // top:20%;
-        // left:50%;
-        // transform: translate(-50%,50%);
-        // margin-bottom:0%;
-        // position:relative;
 `
 const Arrow=styled.div`
-    // text-align:left;
-    // position: absolute;
-    // right: 50%;
-    // top: -1%;
-    // width:4%;
-    // height:4%;
     padding:0;
     color:#414141;
     cursor: pointer;
@@ -49,43 +33,41 @@ const Arrow=styled.div`
     }
 `
 const P=styled.p`  
-  margin-top:5%;
-  width: 100%;
-  // margin-left:2%;
-  word-spacing:9px;
-  color:#414141;
-  font-size: 14px;
-  text-shadow: 1px 1px #fff;
+    margin-top:5%;
+    width: 100%;
+    word-spacing:3px;
+    color:#414141;
+    font-size: 14px;
+    text-shadow: 1px 1px #fff;
 `
 const Box = styled.div`
-width: 60vw;
-height: 60vh;
-padding: 5vh 5vw;
-overflow: hidden;
-background-color: #495a74;
-color: transparent;
-text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.8);
--webkit-background-clip: text;
-transition: box-shadow 0.7s ease-in-out;
-border-radius: 2px;
-box-shadow: 8px 8px 8px #a3b1c6, -8px -8px 8px rgba(255, 255, 255, 0.5), inset 1px 1px 1px #fff, inset -1px -1px 1px #a3b1c6;
+    width: 60vw;
+    height: 60vh;
+    padding: 5vh 5vw;
+    overflow: hidden;
+    background-color: #495a74;
+    color: transparent;
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.8);
+    -webkit-background-clip: text;
+    transition: box-shadow 0.7s ease-in-out;
+    border-radius: 2px;
+    box-shadow: 8px 8px 8px #a3b1c6, -8px -8px 8px rgba(255, 255, 255, 0.5), inset 1px 1px 1px #fff, inset -1px -1px 1px #a3b1c6;
 `
 const I=styled.img`
- width:50px;
- height:90px;
- float:right;
-
- padding-top:10%;
- top: 10%;
+    width:50px;
+    height:90px;
+    float:right;
+    padding-top:10%;
+    top: 10%;
 `
 const Hr = styled.hr`
-height: 1px;
-background-color: #6d5dfc;
-border: none;
+    height: 1px;
+    background-color: #6d5dfc;
+    border: none;
 `
 const H6 =styled.h6`
- font-size:1px;
- opacity:0.3;
+    font-size:1px;
+    opacity:0.3;
 `
 const LinkToProjects=() =>{
   
@@ -161,7 +143,11 @@ const LinkToProjects=() =>{
         S3 ·
         Route53 ·
         Netlify ·
-        Nextjs
+        Nextjs ·
+        Firebase Authentification ·
+        Fireabase Database ·
+        Firebase Storage ·
+        Firebase Hosting
       </P>
       <I src='lavander.png'/>
       </Box>

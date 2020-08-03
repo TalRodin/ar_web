@@ -48,7 +48,6 @@ const A=styled.h6`
     margin:0%;
     &:hover{
         color:#a8a7d1;
-        font-weight: 600;
     }
 
 `
