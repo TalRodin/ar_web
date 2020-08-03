@@ -16,11 +16,8 @@ margin-top:3%;
 `
 
 const Border = styled.div`
-padding-left:5%
-
+  padding-left:5%
 `
-
-
 export default class Photos extends Component {
     render() {
       console.log(this.props.project)
@@ -59,21 +56,17 @@ export default class Photos extends Component {
         ]
       };
       return (
-        
         <div>
           <Container>
           <Slider {...settings}>
           
                {this.props.project.map(p=>{
                    return (
-                    
                          <Border >
                          <img src={`${p}`} width='220px' height='160px'  />
                          </Border>
-                      
                    )
                })}
-          
           </Slider>
           </Container>
         </div>
