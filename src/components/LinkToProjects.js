@@ -147,7 +147,8 @@ const LinkToProjects=() =>{
         Firebase Authentification ·
         Fireabase Database ·
         Firebase Storage ·
-        Firebase Hosting
+        Firebase Hosting ·
+        SCSS
       </P>
       <I src='lavander.png'/>
       </Box>
