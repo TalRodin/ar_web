@@ -52,7 +52,7 @@ class Navigation extends React.Component{
                             spy={true}
                             smooth={true}
                             hashSpy={true}
-                            offset={0}
+                            offset={-30}
                             duration={400}
                             delay={1000}
                             isDynamic={true}
@@ -149,7 +149,7 @@ class Navigation extends React.Component{
                             spy={true}
                             smooth={true}
                             hashSpy={true}
-                            offset={0}
+                            offset={-30}
                             duration={400}
                             delay={1000}
                             isDynamic={true}

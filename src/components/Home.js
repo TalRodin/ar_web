@@ -6,10 +6,7 @@ import Tilt from 'react-parallax-tilt';
 const Wrap=styled.div`
     height: 100vh;
     width:auto;
-    @media screen and (max-width: 489px) {
-      height: 105vh;
-      width:auto;       
-    }
+    
 `
 const H1=styled.h1`
     z-index: 1;
