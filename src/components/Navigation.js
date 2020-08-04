@@ -40,17 +40,18 @@ const Body = styled.div`
         margin-left: 25%;
         z-index: 1;
         }
-    @media screen and (max-width: 489px) {
+    @media screen and (max-width: 415px) {
             position:absolute;
-            margin-left: 15%;
+            margin-left: 10%;
             z-index: 1;
         }
+     
 `
 const Wrapper=styled.li`
     margin:4px 4px;
     cursor: pointer;
     color:#414141;
-    padding:2%;
+    
 `
 const A=styled.h6`
     font-size: small;
@@ -63,6 +64,9 @@ const A=styled.h6`
     }
     @media screen and (max-width: 1035px) {
         font-size: 10px;
+            }
+    @media screen and (max-width: 489px) {
+        font-size: 8px;
             }
 `
 const Input=styled.input`
