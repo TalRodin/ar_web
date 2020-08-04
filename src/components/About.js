@@ -17,6 +17,7 @@ const Wrap=styled.div`
           }
 `
 const Box = styled.div`
+    
     width: 60vw;
     height: 60vh;
     padding: 5vh 5vw;
@@ -27,17 +28,7 @@ const Box = styled.div`
     -webkit-background-clip: text;
     transition: box-shadow 0.7s ease-in-out;
     border-radius: 2px;
-    box-shadow: 8px 8px 8px #a3b1c6, -8px -8px 8px rgba(255, 255, 255, 0.5), inset 1px 1px 1px #fff, inset -1px -1px 1px #a3b1c6;
-    // animation: moveInLeft 4s ease-out;
-    // @keyframes moveInLeft {
-    //   0% {
-    //     opacity: 0;
-    //     transform: translateX(-10rem); }
-    //   80% {
-    //     transform: translateX(1rem); }
-    //   100% {
-    //     opacity: 1;
-    //     transform: translate(0); } }    
+    box-shadow: 8px 8px 8px #a3b1c6, -8px -8px 8px rgba(255, 255, 255, 0.5), inset 1px 1px 1px #fff, inset -1px -1px 1px #a3b1c6;  
 `
 
 const H6 =  styled.span`
@@ -55,7 +46,11 @@ const H6 =  styled.span`
       margin-left:10%;
       margin-top: 10%;
       font-size: 12px;
-          }  
+          } 
+    @media screen and (max-width: 489px) {
+      font-size: 10px;
+      word-spacing:6px;
+            }  
 `
 const H7 = styled.span`
 color:#414141;
@@ -63,7 +58,7 @@ color:#414141;
     font-family: 'Lato', sans-serif;
     line-height: 2;
     letter-spacing: 1px;
-    font-size: 16px;
+    font-size: 12px;
 `
 const Hr = styled.hr`
     height: 1px;
@@ -73,7 +68,7 @@ const Hr = styled.hr`
 
 function About() {
   return (
-    <div id = 'about'>
+    <div id = 'about' >
     <Wrap >
       <Box>
         
