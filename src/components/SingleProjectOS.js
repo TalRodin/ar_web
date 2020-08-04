@@ -34,6 +34,7 @@ font-family: 'Lato', sans-serif;
 `
 const I = styled.img`
 filter: grayscale(80%);
+
 `
 const Icons = styled.div`
 display:flex;
@@ -57,7 +58,7 @@ const SingleProjectOS =(props)=>{
         console.log(props)
         return (
             <Card>
-                <I src={`${props.project.thumbnail}`} width='300px'  height='200px' border-radius='25px'/>
+                <I src={`${props.project.thumbnail}`} width='270px'  height='300px' border-radius='25px'/>
                 <P>
                     {props.project.title}
                 </P>

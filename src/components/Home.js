@@ -42,12 +42,6 @@ const H1=styled.h1`
       100% {
         opacity: 1;
       }
-   
-
-//     @media only screen and (max-width: 900px) {
-//         font-size: 1rem; }
-//     @media only screen and (max-width: 675px) {
-//               font-size: 1rem; } 
 `
 
 const T1=styled.img`
