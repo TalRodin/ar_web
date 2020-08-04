@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link} from 'react-scroll'
 import styled from 'styled-components'
-import { device } from '../device';
 
 const Container =styled.ul`
     list-style:none;
@@ -20,7 +19,6 @@ const Wrapper=styled.li`
     margin:4px 4px;
     cursor: pointer;
     color:#414141;
-    
 `
 const A=styled.h6`
     font-size: small;
@@ -62,15 +60,12 @@ class Navigation extends React.Component{
                             onSetInactive={this.handleSetInactive}
                             ignoreCancelEvents={false}
                         >
-                            
-                            
                             <A>Home</A>
                             {/* <B></B> */}
                             {/* <Input class="state" type="radio" name="app" id="a" value="a"/> */}
                         </Link>
                         </Wrapper>
                         <Wrapper>
-                        
                         <Link activeClass="active"
                             to="about"
                             spy={true}
@@ -90,7 +85,6 @@ class Navigation extends React.Component{
                         </Link>
                         </Wrapper>
                         <Wrapper>
-                        
                         <Link activeClass="active"
                             to="articles"
                             spy={true}
@@ -104,15 +98,12 @@ class Navigation extends React.Component{
                             onSetInactive={this.handleSetInactive}
                             ignoreCancelEvents={false}
                         >
-                             
-                            
                             <A>Articles</A>
                             {/* <B></B> */}
                             {/* <Input class="state" type="radio" name="app" id="c" value="c"/> */}
                         </Link>
                         </Wrapper>
                         <Wrapper>
-                        
                         <Link activeClass="active"
                             to="projects"
                             spy={true}
@@ -127,14 +118,12 @@ class Navigation extends React.Component{
                             ignoreCancelEvents={false}
                         >
                             <div class="indicator"></div>
-                            
                             <A>Projects</A>
                             {/* <B></B> */}
                             {/* <Input class="state" type="radio" name="app" id="d" value="d"/> */}
                         </Link>
                         </Wrapper>
                         <Wrapper>
-                        
                         <Link activeClass="active"
                             to="opensource"
                             spy={true}
