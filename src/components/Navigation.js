@@ -42,7 +42,7 @@ const Body = styled.div`
         }
     @media screen and (max-width: 415px) {
             position:absolute;
-            margin-left: 10%;
+            margin-left: 15%;
             z-index: 1;
         }
      
