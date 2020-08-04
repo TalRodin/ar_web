@@ -10,35 +10,47 @@ const Container =styled.ul`
     display: flex;
     flex-direction:row;
     padding-right:10%;
-    @media ${device.tablet} { 
+    @media screen and (max-width: 1155px) {
         display: flex;
         flex-direction:row;
-        text-align:center;
+        justify-content:center;
         }
-    @media only screen and (max-width: 1040px) {
-            display: flex;
-            flex-direction:row;
-            text-align:center;
-            }
+    // @media screen and (max-width: 780px) {
+    //     display: flex;
+    //     flex-direction:row;
+    //     justify-content:center;
+    //     }
+    // @media screen and (max-width: 489px) {
+    //     font-size: 0.9rem;
+    //     letter-spacing: 5px;        
+    //     }
 `
 const Body = styled.div`
     position:fixed;
     margin-left: 65%;
     margin-top: 5px;
     z-index: 1;
-    @media ${device.tablet} { 
-        margin-left: 27%;
-        margin-top:0%;
-        position:relative;
-            }
-   
+    @media screen and (max-width: 1035px) {
+        position:absolute;
+        margin-left: 30%;
+        z-index: 1;
+        }
+    @media screen and (max-width: 780px) {
+        position:absolute;
+        margin-left: 25%;
+        z-index: 1;
+        }
+    @media screen and (max-width: 489px) {
+            position:absolute;
+            margin-left: 15%;
+            z-index: 1;
+        }
 `
 const Wrapper=styled.li`
     margin:4px 4px;
     cursor: pointer;
     color:#414141;
     padding:2%;
-    // float:right;
 `
 const A=styled.h6`
     font-size: small;
@@ -49,7 +61,9 @@ const A=styled.h6`
     &:hover{
         color:#a8a7d1;
     }
-
+    @media screen and (max-width: 1035px) {
+        font-size: 10px;
+            }
 `
 const Input=styled.input`
     height:6px; 

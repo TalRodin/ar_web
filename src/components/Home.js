@@ -22,11 +22,11 @@ const H1=styled.h1`
     background: url(https://i.pinimg.com/564x/48/a2/81/48a281139593319f3b13c8bc7b0f6e3b.jpg);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-   @media screen and (max-width: 1030px) {
+   @media screen and (max-width: 1035px) {
       font-size: 1.5rem;
       letter-spacing: 10px;
             }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 780px) {
             font-size: 0.9rem;
             letter-spacing: 10px;
                   }
