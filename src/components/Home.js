@@ -10,8 +10,8 @@ const Wrap=styled.div`
 const H1=styled.h1`
     z-index: 1;
     font-family: 'Lato', sans-serif;
-    position: absolute;
     top:50%;
+    position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
     text-transform: uppercase;

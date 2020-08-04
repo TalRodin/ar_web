@@ -4,48 +4,17 @@ import styled from 'styled-components'
 import { device } from '../device';
 
 const Container =styled.ul`
-    // text-align:right;
     list-style:none;
-    position: fixed;
     display: flex;
     flex-direction:row;
-    padding-right:10%;
-    @media screen and (max-width: 1155px) {
-        display: flex;
-        flex-direction:row;
-        justify-content:center;
-        }
-    // @media screen and (max-width: 780px) {
-    //     display: flex;
-    //     flex-direction:row;
-    //     justify-content:center;
-    //     }
-    // @media screen and (max-width: 489px) {
-    //     font-size: 0.9rem;
-    //     letter-spacing: 5px;        
-    //     }
+    padding-right:10px;
 `
 const Body = styled.div`
     position:fixed;
-    margin-left: 65%;
-    margin-top: 5px;
+    padding-top: 40px;
     z-index: 1;
-    @media screen and (max-width: 1035px) {
-        position:absolute;
-        margin-left: 30%;
-        z-index: 1;
-        }
-    @media screen and (max-width: 780px) {
-        position:absolute;
-        margin-left: 25%;
-        z-index: 1;
-        }
-    @media screen and (max-width: 415px) {
-            position:absolute;
-            margin-left: 15%;
-            z-index: 1;
-        }
-     
+    left: 50%;
+    transform: translate(-50%, -50%);
 `
 const Wrapper=styled.li`
     margin:4px 4px;
@@ -72,21 +41,6 @@ const A=styled.h6`
 const Input=styled.input`
     height:6px; 
     width:6px;   
-`
-const B=styled.div`
-width: 6px;
-height: 6px;
-border-radius:50%;
-border: solid 1px #ad8781;
-cursor: pointer;
-float:right;
-// box-shadow: 0 0 6px 6px #fbfbfb, 12px 12px 16px 8px rgba(136, 136, 136, 0.7), -12px -12px 16px 8px rgba(244, 244, 244, 0.7);
-// &:hover {
-//   box-shadow: -2px -2px 5px rgba(0,0,0,0.7), 2px 2px 5px rgba(255,255,255,0.1);
-  
-// }
-// &:active {
-//   box-shadow: inset 5px 5px 10px rgba(0,0,0,0.7) , inset -5px -5px 10px rgba(255,255,255,0.1);
 `
 
 class Navigation extends React.Component{
@@ -130,8 +84,6 @@ class Navigation extends React.Component{
                             onSetInactive={this.handleSetInactive}
                             ignoreCancelEvents={false}
                         >
-                             
-                            
                             <A>About</A>
                             {/* <B></B> */}
                             {/* <Input class="state" type="radio" name="app" id="b" value="b"/> */}
