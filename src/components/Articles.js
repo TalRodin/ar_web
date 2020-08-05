@@ -30,7 +30,7 @@ const Box = styled.div`
       width: 80vw;
       height: 50vh;
       padding: 3vh 3vw;
-            }
+            } 
 `
 const Container = styled.div`
     width: 480px;

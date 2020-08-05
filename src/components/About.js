@@ -12,9 +12,7 @@ const Wrap=styled.div`
     justify-content: center;
     display: flex;
     align-items: center;
-    @media ${device.tablet} { 
-      height: 60vh;
-          }
+    
 `
 const Box = styled.div`
     
