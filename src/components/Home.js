@@ -5,8 +5,8 @@ import Tilt from 'react-parallax-tilt';
 
 const Wrap=styled.div`
     height: 100vh;
-    width:auto;
-    
+    width:auto;  
+   
 `
 const H1=styled.h1`
     z-index: 1;
@@ -54,7 +54,9 @@ const T1=styled.img`
       @media screen and ${device.tablet} {
             left:150px;
        }
-    
+      @media screen and (max-width: 489px) {
+            left:70px;
+            }   
 `
 const T2=styled.img`
       top:140px;
@@ -62,7 +64,6 @@ const T2=styled.img`
       width:10px;
       height:10px;
       position:absolute;
-   
 `
 
 const T3=styled.img`
@@ -71,10 +72,10 @@ const T3=styled.img`
       width:10px;
       height:10px;
       position:absolute;
-   
       @media screen and ${device.tablet} {
             left:200px;
        }
+      
 `
 const T4=styled.img`
       top:160px;
@@ -83,7 +84,7 @@ const T4=styled.img`
       height:30px;
       position:absolute;
       @media screen and (max-width: 489px) {
-            left:150px;
+            left:50px;
             }
   `
 const T5=styled.img`
@@ -92,7 +93,6 @@ const T5=styled.img`
       width:20px;
       height:20px;
       position:absolute;
-      
       @media screen and ${device.tablet} {
             left:470px;
        }
@@ -115,7 +115,7 @@ const Duga=styled.img`
       width:20px;
       height:16px;
       position:absolute;
-      
+     
 `
 const Duga1=styled.img`
       top:10px;
@@ -128,7 +128,10 @@ const Duga1=styled.img`
       @media screen and ${device.tablet} {
             left:200px;
        }
-      
+       @media screen and (max-width: 489px) {
+            left:160px;
+            top:100px;
+            }
 `
 const Duga2=styled.img`
       top:3px;
@@ -137,7 +140,10 @@ const Duga2=styled.img`
       height:26px;
       transform:rotate(100deg);
       position:absolute;
-      
+      @media screen and (max-width: 489px) {
+            left:300px;
+            top:280px;
+            }
 `
 const W=styled.img`
       top:200px;
@@ -149,7 +155,7 @@ const W=styled.img`
       @media screen and ${device.tablet} {
             left:150px;
        }
-      
+     
 `
 const W1=styled.img`
       top:40px;
@@ -157,7 +163,10 @@ const W1=styled.img`
       width:35px;
       height:20px;
       position:absolute;
-      
+      @media screen and (max-width: 489px) {
+            left:30px;
+            top:100px;
+            }
      
 `
 const W2=styled.img`
@@ -172,7 +181,8 @@ const W2=styled.img`
             left:400px;
        }
       @media screen and (max-width: 489px) {
-            left:50px;
+            left:270px;
+            top:50px;
             }
 `
 const Dot1 =styled.img`
@@ -233,7 +243,10 @@ const Dot6 =styled.img`
       width:30px;
       height:30px;
       position:absolute;
-
+      @media screen and (max-width: 489px) {
+            left:300px;
+            top:450px;
+            }
 `
 const Dot7 =styled.img`
       top:150px;
@@ -245,7 +258,10 @@ const Dot7 =styled.img`
       @media screen and ${device.tablet} {
             left:300px;
        }
-      
+       @media screen and (max-width: 489px) {
+            left:230px;
+            top:270px;
+            }
     `
 const Dot8 =styled.img`
       top:150px;
