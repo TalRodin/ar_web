@@ -13,54 +13,51 @@ const Wrap=styled.div`
     align-items: center;    
 `
 const Box = styled.div`
-width: 60vw;
-height: 60vh;
-padding: 5vh 5vw;
-overflow: hidden;
-background-color: #495a74;
-color: transparent;
-text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.8);
--webkit-background-clip: text;
-transition: box-shadow 0.7s ease-in-out;
-border-radius: 2px;
-box-shadow: 8px 8px 8px #a3b1c6, -8px -8px 8px rgba(255, 255, 255, 0.5), inset 1px 1px 1px #fff, inset -1px -1px 1px #a3b1c6;
-justify-content: center; 
-display:flex;
+    width: 60vw;
+    height: 60vh;
+    padding: 5vh 5vw;
+    overflow: hidden;
+    background-color: #495a74;
+    color: transparent;
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.8);
+    -webkit-background-clip: text;
+    transition: box-shadow 0.7s ease-in-out;
+    border-radius: 2px;
+    box-shadow: 8px 8px 8px #a3b1c6, -8px -8px 8px rgba(255, 255, 255, 0.5), inset 1px 1px 1px #fff, inset -1px -1px 1px #a3b1c6;
+    justify-content: center; 
+    display:flex;
+    @media screen and (max-width: 489px) {
+      width: 80vw;
+      height: 50vh;
+      padding: 3vh 3vw;
+            }
 `
 const Container = styled.div`
-    // margin: 0 auto;
-    width: 500px;
-    // height: 290px;
-    // top:20%;
-    // position:relative;
-    // border-radius: 35px;
-    // box-shadow: 0 0 6px 6px #fbfbfb, 12px 12px 16px 8px rgba(136, 136, 136, 0.7), -12px -12px 16px 8px rgba(244, 244, 244, 0.7);
-    // @media ${device.tablet} {
-    //   width: 280px;
-    //   height: 250px;
-    // }
-
-// z-index:12;
-    `
+    width: 480px;
+    @media screen and (max-width: 489px) {
+      width: 400px;
+            }
+`
 const H = styled.h3`
-color:#414141;
+    color:#414141;
     text-shadow: 1px 2px 1px rgba(255,255,255,0.5);
     font-family: 'Lato', sans-serif;
     line-height: 2;
     letter-spacing: 1px;
     font-size: 16px;
     text-align:center;
+    @media screen and (max-width: 489px) {
+      font-size:12px;
+                }
 `
 const Keywords= styled.div`
-color:#414141;
+    color:#414141;
     text-align: left;
     margin-left:25%;
     font-size:12px;
     text-shadow: 1px 1px #fff;
     animation: appearing 4s ease-out;
-    @media ${device.tablet} {
-      font-size:14px;
-    }
+   
     @keyframes appearing {
       0% {
         opacity: 0;
@@ -68,18 +65,15 @@ color:#414141;
       100% {
         opacity: 1;
          }
-    
+    @media screen and (max-width: 489px) {
+      font-size:10px;
+                }
 `
 const S=styled.svg`
-color:#6d5dfc;
+    color:#6d5dfc;
     margin-left:50%;
     transform: translate(-50%, -50%);
     margin-top:5%;
-    @media ${device.tablet} {
-      width:30pt;
-      height:30pt;
-      margin-top:8%;
-    }
     animation: appearing 4s ease-out;
     @keyframes appearing {
       0% {
