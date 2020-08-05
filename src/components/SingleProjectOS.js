@@ -26,15 +26,28 @@ const Card = styled.div`
     transition: box-shadow 0.7s ease-in-out;
     border-radius: 2px;
     box-shadow: 8px 8px 8px #a3b1c6, -8px -8px 8px rgba(255, 255, 255, 0.5), inset 1px 1px 1px #fff, inset -1px -1px 1px #a3b1c6;
-`
+    @media screen and (max-width: 489px) {
+        width: 80vw;
+        height: 50vh;
+        padding: 3vh 3vw;
+              } 
+
+    `
 const P = styled.p`
 color:#414141;
 font-size: 16px;
 font-family: 'Lato', sans-serif;
+@media screen and (max-width: 489px) {
+    font-size: 12px;
+          } 
 `
 const I = styled.img`
 filter: grayscale(80%);
-
+@media screen and (max-width: 489px) {
+    width: 200px;
+    height: 200px;
+    
+          } 
 `
 const Icons = styled.div`
 display:flex;
@@ -52,6 +65,9 @@ const P1=styled.div`
    color:#414141;
    width:60%;
    font-family: 'Lato', sans-serif;
+   @media screen and (max-width: 489px) {
+    font-size: 10px;
+          } 
 `
 
 const SingleProjectOS =(props)=>{

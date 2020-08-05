@@ -39,6 +39,10 @@ const P=styled.p`
     color:#414141;
     font-size: 14px;
     text-shadow: 1px 1px #fff;
+    @media screen and (max-width: 489px) {
+      font-size: 10px;
+      word-spacing:6px;
+            }
 `
 const Box = styled.div`
     width: 60vw;
@@ -52,13 +56,22 @@ const Box = styled.div`
     transition: box-shadow 0.7s ease-in-out;
     border-radius: 2px;
     box-shadow: 8px 8px 8px #a3b1c6, -8px -8px 8px rgba(255, 255, 255, 0.5), inset 1px 1px 1px #fff, inset -1px -1px 1px #a3b1c6;
-`
+    @media screen and (max-width: 489px) {
+      width: 80vw;
+      height: 50vh;
+      padding: 3vh 3vw;
+            } 
+    `
 const I=styled.img`
     width:50px;
     height:90px;
     float:right;
     padding-top:10%;
     top: 10%;
+    @media screen and (max-width: 489px) {
+      width:30px;
+    height:60px;
+            }
 `
 const Hr = styled.hr`
     height: 1px;

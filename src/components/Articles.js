@@ -35,7 +35,7 @@ const Box = styled.div`
 const Container = styled.div`
     width: 480px;
     @media screen and (max-width: 489px) {
-      width: 400px;
+      width: 340px;
             }
 `
 const H = styled.h3`
@@ -66,7 +66,7 @@ const Keywords= styled.div`
         opacity: 1;
          }
     @media screen and (max-width: 489px) {
-      font-size:10px;
+      font-size:8px;
                 }
 `
 const S=styled.svg`

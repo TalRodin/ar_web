@@ -13,6 +13,7 @@ const Wrap=styled.div`
     align-items: center;
     @media ${device.tablet} { 
       height: 60vh;
+      height: 110vh;
           }
 `
 const Box = styled.div`
