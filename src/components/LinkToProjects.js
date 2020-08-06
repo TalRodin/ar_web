@@ -26,6 +26,9 @@ const L=styled.span`
         font-family: 'Lato', sans-serif;
         font-size: 16px;
         text-shadow: 1px 1px #fff;
+        @media screen and (max-width: 489px) {
+          font-size: 12px;
+                } 
 `
 const Arrow=styled.div`
     padding:0;
@@ -70,10 +73,11 @@ const I=styled.img`
     height:90px;
     float:right;
     padding-top:10%;
-    top: 10%;
+    // top: 10%;
     @media screen and (max-width: 489px) {
       width:30px;
-    height:60px;
+      height:60px;
+      padding-top:1%;
             }
 `
 const Hr = styled.hr`
