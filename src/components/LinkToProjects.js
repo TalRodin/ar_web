@@ -14,6 +14,9 @@ const Wrap=styled.div`
     display: flex;
     align-items: center;
     color:#414141; 
+    @media screen and (max-width: 489px) {
+      height: 80vh;
+            } 
 `
 const L=styled.span`  
         display:flex;

@@ -10,7 +10,10 @@ const Wrap=styled.div`
     height: 100vh;
     justify-content: center;
     display: flex;
-    align-items: center;    
+    align-items: center; 
+    @media screen and (max-width: 489px) {
+      height: 80vh;
+            }    
 `
 const Box = styled.div`
     width: 60vw;
@@ -34,9 +37,7 @@ const Box = styled.div`
 `
 const Container = styled.div`
     width: 480px;
-    @media screen and (max-width: 489px) {
-      width: 340px;
-            }
+    
 `
 const H = styled.h3`
     color:#414141;
@@ -48,16 +49,18 @@ const H = styled.h3`
     text-align:center;
     @media screen and (max-width: 489px) {
       font-size:12px;
-                }
+            }
 `
 const Keywords= styled.div`
     color:#414141;
     text-align: left;
     margin-left:25%;
-    font-size:12px;
+    font-size:14px;
     text-shadow: 1px 1px #fff;
     animation: appearing 4s ease-out;
-   
+    @media screen and (max-width: 489px) {
+      font-size:10px;
+            }
     @keyframes appearing {
       0% {
         opacity: 0;
@@ -65,9 +68,7 @@ const Keywords= styled.div`
       100% {
         opacity: 1;
          }
-    @media screen and (max-width: 489px) {
-      font-size:8px;
-                }
+   
 `
 const S=styled.svg`
     color:#6d5dfc;
@@ -92,15 +93,16 @@ const I = styled.img`
     transform: rotate(50deg);
 `
 const Img = styled.img`
-     width:20%;
-     height:20%;
-     filter: grayscale(80%);
-     display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-     
+      width:20%;
+      height:20%;
+      filter: grayscale(80%);
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;   
 `
+
+
 class Articles extends React.Component{
   constructor(props) {
     super(props);

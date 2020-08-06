@@ -12,7 +12,9 @@ const Wrap=styled.div`
     justify-content: center;
     display: flex;
     align-items: center;
-    
+    @media screen and (max-width: 489px) {
+      height: 80vh;
+            } 
 `
 const Box = styled.div`
     

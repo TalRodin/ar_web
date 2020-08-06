@@ -11,10 +11,9 @@ const Wrap=styled.div`
     justify-content: center;
     display: flex;
     align-items: center;
-    @media ${device.tablet} { 
-      height: 60vh;
-      height: 110vh;
-          }
+    @media screen and (max-width: 489px) {
+      height: 80vh;
+            } 
 `
 const Box = styled.div`
       margin: 11%;

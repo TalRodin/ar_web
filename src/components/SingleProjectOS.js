@@ -46,7 +46,6 @@ filter: grayscale(80%);
 @media screen and (max-width: 489px) {
     width: 200px;
     height: 200px;
-    
           } 
 `
 const Icons = styled.div`
