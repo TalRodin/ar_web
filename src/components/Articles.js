@@ -36,7 +36,7 @@ const Box = styled.div`
             } 
 `
 const Container = styled.div`
-    width: 480px;
+    width: 440px;
     
 `
 const H = styled.h3`
@@ -48,7 +48,7 @@ const H = styled.h3`
     font-size: 16px;
     text-align:center;
     @media screen and (max-width: 489px) {
-      font-size:12px;
+      font-size:10px;
             }
 `
 const Keywords= styled.div`
