@@ -101,8 +101,8 @@ const Img = styled.img`
       margin-right: auto;
       width: 50%;
       @media screen and (max-width: 489px) {
-        width:25%;
-        height:25%;
+        width:30%;
+        height:30%;
               }   
 `
 
