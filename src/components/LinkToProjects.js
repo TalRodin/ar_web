@@ -89,6 +89,31 @@ const H6 =styled.h6`
     font-size:1px;
     opacity:0.3;
 `
+const B = styled.div`
+  display:flex;
+  list-style-type: none;
+  flex-direction: row;
+  color:#414141;
+    font-size: 12px;
+    text-shadow: 1px 1px #fff;
+    justify-content: space-between;
+  @media screen and (max-width: 489px) {
+    font-size: 8px;
+    justify-content: space-around;
+            }
+`
+const Item= styled.div`
+  display:flex;
+  flex-direction: column;
+  margin: 1%;
+  @media screen and (max-width: 489px) {
+    margin: 0.5%;
+  }
+`
+
+
+
+
 const LinkToProjects=() =>{
   
   return (
@@ -104,72 +129,82 @@ const LinkToProjects=() =>{
     </ItemToProject>
     </L>
     <Hr />
-    <P>
-        Python ·
-        JavaScript ·
-        React ·
-        Firebase ·
-        Nodejs ·
-        CSS ·
-        HTML ·
-        styled-components ·
-        D3js ·
-        AWS ·
-        React ·
-        Redux ·
-        Nodejs ·
-        Express ·
-        PostgreSQL (data analyses) ·
-        Sequelize ·
-        Relational Model ·
-        Normalization ·
-        Heroku ·
-        CSS ·
-        HTML5 ·
-        Bootstrap ·
-        Material UI ·
-        SVG ·
-        Webpack ·
-        npm ·
-        VSCode ·
-        Anaconda ·
-        Git ·
-        Github ·
-        Lucid-Chart ·
-        Postman ·
-        Mocha ·
-        Chai ·
-        Jest ·
-        Tableau ·
-        Plotly ·
-        R ·
-        C++ ·
-        PHP ·
-        MATLAB ·
-        SPSS ·
-        AGILE Methodology ·
-        REST API ·
-        Flask ·
-        Machine Learning ·
-        NLP ·
-        Data Modeling and Evaluation ·
-        Building predictive models ·
-        Google OAuth ·
-        Babel ·
-        Data Structures and Algorithms ·
-        System Design ·
-        AWS lambda ·
-        AWS DynomoDB ·
-        S3 ·
-        Route53 ·
-        Netlify ·
-        Nextjs ·
-        Firebase Authentification ·
-        Fireabase Database ·
-        Firebase Storage ·
-        Firebase Hosting ·
-        SCSS
-      </P>
+    <B >
+        <Item>
+        <li>Python</li> 
+        <li>JavaScript</li>
+        <li>styled-components</li>
+        <li>D3js</li>
+        <li>AWS</li>
+        <li>Normalization</li>
+        <li>Git</li>
+        <li>Mocha</li>
+        <li>Plotly</li>
+        <li>MATLAB</li>
+        </Item>
+        <Item>
+        <li>React</li>
+        <li>Firebase</li>
+        <li>Redux</li>
+        <li>Express</li>
+        <li>PostgreSQL (data analyses)</li>
+        <li>npm</li>
+        <li>Github</li>
+        <li>Chai</li>
+        <li>R</li>
+        <li>SPSS</li>
+        </Item>
+        <Item>
+        <li>Nodejs</li>
+        <li>CSS</li>
+        <li>HTML</li>
+        <li>Sequelize</li>
+        <li>Relational Model</li>
+        <li>VSCode</li>
+        <li>Lucid-Chart</li>
+        <li>Jest</li>
+        <li>C++</li>
+        <li>AGILE Methodology</li>
+        </Item>
+        <Item>
+        <li>Heroku</li>
+        <li>Bootstrap</li>
+        <li>Material UI</li>
+        <li>SVG</li>
+        <li>Webpack</li>
+        <li>Anaconda</li>
+        <li>Postman</li>
+        <li>Tableau</li>
+        <li>PHP</li>
+        <li>REST API</li>
+        </Item>
+        <Item>
+        <li>Flask</li>
+        <li>Machine Learning</li>
+        <li>NLP</li>
+        <li>Data Modeling and Evaluation</li>
+        <li>Building predictive models</li>
+        <li>Google OAuth</li>
+        <li>Babel</li>
+        <li>Data Structures and Algorithms</li>
+        <li>System Design</li>
+        <li>AWS lambda</li>
+        </Item>
+        <Item>
+        <li>AWS DynomoDB</li>
+        <li>S3</li>
+        <li>Route53</li>
+        <li>Netlify</li>
+        <li>Nextjs</li>
+        <li>Firebase Authentification</li>
+        <li>Fireabase Database</li>
+        <li>Firebase Storage</li>
+        <li>Firebase Hosting</li>
+        <li>SCSS</li>
+        </Item>
+        
+    
+      </B>
       <I src='lavander.png'/>
       </Box>
       
