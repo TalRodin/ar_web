@@ -93,16 +93,16 @@ const I = styled.img`
     transform: rotate(50deg);
 `
 const Img = styled.img`
-      width:30%;
-      height:30%;
+      width:60%;
+      height:60%;
       filter: grayscale(80%);
       display: block;
       margin-left: auto;
       margin-right: auto;
-      width: 50%;
+      
       @media screen and (max-width: 489px) {
-        width:30%;
-        height:30%;
+        width:40%;
+        height:40%;
               }   
 `
 

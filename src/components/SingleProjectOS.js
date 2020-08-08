@@ -89,6 +89,9 @@ const SingleProjectOS =(props)=>{
                     <Box>
                         <A href={`${props.project.github}`} cursor='pointer' class="icon-link" title="Follow us on Github"><i class="fab  fa-github"></i></A>
                     </Box>
+                    <Box>
+                        <A href={`${props.project.readme}`} cursor='pointer' class="icon-link" title="Follow us on Github"><i class="fab fa-readme"></i></A>
+                    </Box>
                 </Icons>
             </Card>
           

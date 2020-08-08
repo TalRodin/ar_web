@@ -46,16 +46,8 @@ const H6 =  styled.span`
     color:#414141;
     font-size: 14px;
     text-shadow: 1px 1px #fff;
-    @media ${device.tablet} { 
-      display: flex;
-      flex-direction: column;
-      width: 80%;
-      margin-left:10%;
-      margin-top: 10%;
-      font-size: 12px;
-          } 
     @media screen and (max-width: 489px) {
-      font-size: 10px;
+      font-size: 12px;
       word-spacing:6px;
             }  
 `
@@ -65,7 +57,11 @@ color:#414141;
     font-family: 'Lato', sans-serif;
     line-height: 2;
     letter-spacing: 1px;
-    font-size: 12px;
+    font-size: 16px;
+    @media screen and (max-width: 489px) {
+      font-size: 14px;
+      word-spacing:6px;
+            } 
 `
 const Hr = styled.hr`
     height: 1px;

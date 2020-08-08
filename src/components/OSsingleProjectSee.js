@@ -78,6 +78,7 @@ class OSsingleProjectSee extends React.Component{
               <option ></option>
               <option>LineBarA</option>
               <option>LineBarB</option>
+              <option>LineBarC</option>
             </select>
           </div>
         );

@@ -17,37 +17,39 @@ const Email = styled.div`
   padding: 2%;
   float:right;
   text-shadow: 0.5px 0.5px 0.5px #000;
+  @media screen and (max-width: 489px) {
+    font-size: 12px;
+          } 
 `
 
 const A=styled.a`
-    
     color:#fbfbfb;
-   
 `
 const B = styled.div`
+    align-items:center;
     width: 20px;
     height: 20px;
-    margin:10px;
+    margin:6px;
     cursor: pointer;
     float:left;
-    padding:1%;
+    padding:10px;
     border-radius: 50px;
     border: 0.05px solid #f2f3f6;
-    
+    @media screen and (max-width: 489px) {
+      padding:5px;
+            } 
 `
+
+
+
 function Contact() {
   return (
     <Wrap id='contact'>
-           
-            <A  href="https://www.linkedin.com/in/alyonarodin/" class="icon-link" title="Linkedin"><B><i  class="fab  fa-linkedin-in"></i></B></A>
-        
-           
-            <A href="https://twitter.com/alyona_r8" class="icon-link" title="Twitter"> <B><i  class="fab  fa-twitter"></i> </B></A>
-           
-          <Email>
-          Email: alyona.rodin@gmail.com
-          </Email>
-     
+            <A  href="https://www.linkedin.com/in/alyonarodin/" class="icon-link" title="Linkedin"><B><i  style={{padding:'3px'}} class="fab  fa-linkedin-in"></i></B></A>
+            <A href="https://twitter.com/alyona_r8" class="icon-link" title="Twitter"> <B><i style={{padding:'3px'}} class="fab  fa-twitter "></i> </B></A>
+            <Email>
+              Email: alyona.rodin@gmail.com
+            </Email>
     </Wrap>
   );
 }
