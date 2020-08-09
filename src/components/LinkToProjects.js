@@ -131,85 +131,78 @@ const LinkToProjects=() =>{
     <Hr />
     <B >
         <Item>
-        <li>Python</li> 
-        <li>JavaScript</li>
-        <li>styled-components</li>
-        <li>D3js</li>
-        <li>AWS</li>
-        <li>Normalization</li>
-        <li>Git</li>
-        <li>Mocha</li>
-        <li>Plotly</li>
-        <li>MATLAB</li>
+          <li>AWS</li> 
+          <li>AGILE Methodology</li>
+          <li>AWS DynomoDB</li>
+          <li>AWS lambda</li>
+          <li>Anaconda</li>
+          <li>Bootstrap</li>
+          <li>Building predictive models</li>
+          <li>Babel</li>
+          <li>CSS</li>
+          <li>Chai</li>
+          <li>C++</li>
+          <li>Data Modeling and Evaluation</li>
         </Item>
         <Item>
-        <li>React</li>
-        <li>Firebase</li>
-        <li>Redux</li>
-        <li>Express</li>
-        <li>PostgreSQL (data analyses)</li>
-        <li>npm</li>
-        <li>Github</li>
-        <li>Chai</li>
-        <li>R</li>
-        <li>SPSS</li>
+          <li>D3js</li>
+          <li>Data Structures and Algorithms</li>
+          <li>Express</li>
+          <li>Flask</li>
+          <li>Firebase</li>
+          <li>Firebase Authentification</li>
+          <li>Fireabase Database</li>
+          <li>Firebase Storage</li>
+          <li>Firebase Hosting</li>
+          <li>Github</li>
+          <li>Git</li>
+          <li>Google OAuth</li>
         </Item>
         <Item>
-        <li>Nodejs</li>
-        <li>CSS</li>
-        <li>HTML</li>
-        <li>Sequelize</li>
-        <li>Relational Model</li>
-        <li>VSCode</li>
-        <li>Lucid-Chart</li>
-        <li>Jest</li>
-        <li>C++</li>
-        <li>AGILE Methodology</li>
+          <li>Heroku</li>
+          <li>JavaScript</li>
+          <li>Jest</li>
+          <li>Lucid-Chart</li>
+          <li>Material ui</li>
+          <li>Machine Learning</li>
+          <li>MATLAB</li>
+          <li>Mocha</li>
+          <li>npm</li>
+          <li>NLP</li>
+          <li>Normalization</li>
+          <li>Nodejs</li>
         </Item>
         <Item>
-        <li>Heroku</li>
-        <li>Bootstrap</li>
-        <li>Material UI</li>
-        <li>SVG</li>
-        <li>Webpack</li>
-        <li>Anaconda</li>
-        <li>Postman</li>
-        <li>Tableau</li>
-        <li>PHP</li>
-        <li>REST API</li>
+          <li>Netlify</li>
+          <li>Nextjs</li>
+          <li>Python</li>
+          <li>Plotly</li>
+          <li>PostgreSQL (data analyses)</li>
+          <li>Postman</li>
+          <li>PHP</li>
+          <li>R</li>
+          <li>Relational Model</li>
+          <li>Redux</li>
+          <li>REST API</li>
+          <li>React</li>
         </Item>
         <Item>
-        <li>Flask</li>
-        <li>Machine Learning</li>
-        <li>NLP</li>
-        <li>Data Modeling and Evaluation</li>
-        <li>Building predictive models</li>
-        <li>Google OAuth</li>
-        <li>Babel</li>
-        <li>Data Structures and Algorithms</li>
-        <li>System Design</li>
-        <li>AWS lambda</li>
+          <li>Route53</li>
+          <li>SVG</li>
+          <li>S3</li>
+          <li>styled-components</li>
+          <li>SPSS</li>
+          <li>Sequelize</li>
+          <li>SCSS</li>
+          <li>System Design</li>
+          <li>Tableau</li>
+          <li>Webpack</li>
+          <li>VSCode</li>
         </Item>
-        <Item>
-        <li>AWS DynomoDB</li>
-        <li>S3</li>
-        <li>Route53</li>
-        <li>Netlify</li>
-        <li>Nextjs</li>
-        <li>Firebase Authentification</li>
-        <li>Fireabase Database</li>
-        <li>Firebase Storage</li>
-        <li>Firebase Hosting</li>
-        <li>SCSS</li>
-        </Item>
-        
-    
       </B>
-      <I src='lavander.png'/>
+        <I src='lavander.png'/>
       </Box>
-      
     </Wrap>
-  
   );
 }
 

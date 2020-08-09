@@ -48,7 +48,7 @@ const H6 =  styled.span`
     text-shadow: 1px 1px #fff;
     @media screen and (max-width: 489px) {
       font-size: 12px;
-      word-spacing:6px;
+      word-spacing:3px;
             }  
 `
 const H7 = styled.span`
