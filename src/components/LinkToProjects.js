@@ -77,7 +77,7 @@ const I=styled.img`
     @media screen and (max-width: 489px) {
       width:30px;
       height:60px;
-      padding-top:1%;
+      padding-top:3%;
             }
 `
 const Hr = styled.hr`
