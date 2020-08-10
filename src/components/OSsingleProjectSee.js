@@ -72,7 +72,7 @@ class OSsingleProjectSee extends React.Component{
     renderCardSelector() {
         return (
             <div style={{}}>
-            {/* <label style={{textAlign: 'center',width: '100%'}}></label> */}
+            <label style={{textAlign: 'center',width: '100%'}}></label>
             <select style={{padding:'4px', outline:'0px', transform: 'translateZ(0)', filter:'drop-shadow(0px 10px 5px black)', fontSize: '16px',borderRadius: '16px',cursor: 'pointer',color:'#26282a',border:' 2px dotted black',width: '10rem',appearance: 'none',backgroundColor: 'transparent'}}
               onChange={(e) => this.setState({ selectedCardType: e.target.value })}>
               <option ></option>
@@ -80,12 +80,14 @@ class OSsingleProjectSee extends React.Component{
               <option>LineBarB</option>
               <option>LineBarC</option>
             </select>
-          </div>
+         
+        </div>
+        
         );
       }
     renderSelectedCard(selectedCardType) {
         if (!selectedCardType)
-          return <FirstPage text="Select chart" />;
+          return <FirstPage text='Select an example'/>;
         const Card = Cards[selectedCardType];
         return <Card />;
         

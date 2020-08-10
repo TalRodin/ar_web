@@ -42,7 +42,8 @@ font-family: 'Lato', sans-serif;
           } 
 `
 const I = styled.img`
-filter: grayscale(80%);
+filter: grayscale(50%);
+opacity: 0.5;
 @media screen and (max-width: 489px) {
     width: 200px;
     height: 200px;

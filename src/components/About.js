@@ -4,7 +4,6 @@ import SVGPic from './svg_girl'
 import Typing from './Typing'
 import { device } from '../device';
 
-
 const Wrap=styled.div`
     height: 100vh;
     width:auto;
@@ -17,7 +16,6 @@ const Wrap=styled.div`
             } 
 `
 const Box = styled.div`
-    
     width: 60vw;
     height: 60vh;
     padding: 5vh 5vw;
@@ -34,9 +32,7 @@ const Box = styled.div`
       height: 50vh;
       padding: 3vh 3vw;
             } 
-
-
-    `
+ `
 
 const H6 =  styled.span`
     line-height: normal;
@@ -68,16 +64,14 @@ const Hr = styled.hr`
     background-color: #6d5dfc;
     border: none;
 `
-
 function About() {
   return (
     <div id = 'about' >
     <Wrap >
       <Box>
-        
-  <H7 >About</H7>
+        <H7>About</H7>
         <Hr/>
-         <H6><Typing /></H6>
+        <H6><Typing/></H6>
       </Box>
     </Wrap>
     </div>
