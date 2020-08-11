@@ -8,6 +8,9 @@ const D = styled.div`
 const H1 = styled.h1`
 color:#414141;
 text-shadow: 1px 1px #fff;
+@media screen and (max-width: 489px) {
+  font-size: 12px;
+        } 
 `
 
 const I = styled.img`

@@ -8,7 +8,7 @@ const backgroundImg = {
   backgroundImage: `url(${img})`,
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
-  height: 356,
+  height: 350,
   width:650,
   position: 'relative',
   zIndex: 1
@@ -35,7 +35,7 @@ export default (props) => (
      
     </aside>
     <footer >
-    <A href={`https://github.com/TalRodin/D3js-react/tree/master/src/components/LineBarChart`} cursor='pointer' class="icon-link" title="Follow us on Github"><i class="fab  fa-github"></i></A>
+    <A href={`https://github.com/TalRodin/D3js-react/tree/master/src/components/StackedBar`} cursor='pointer' class="icon-link" title="Follow us on Github"><i class="fab  fa-github"></i></A>
     </footer>
   </D>
 );

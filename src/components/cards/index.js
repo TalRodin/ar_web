@@ -1,3 +1,3 @@
-export { default as LineBarA } from './cardA/CardA';
-export { default as LineBarB } from './cardB/CardB';
-export { default as LineBarC } from './cardC/CardC';
+export { default as LineBar } from './cardA/CardA';
+export { default as StackedBar } from './cardB/CardB';
+export { default as CircleBar } from './cardC/CardC';
