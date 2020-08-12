@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const D = styled.div`
     float:right;
-    padding-right:80%;
+    // padding-right:80%;
 `
 const H1 = styled.h1`
 color:#414141;

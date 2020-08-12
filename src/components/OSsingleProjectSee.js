@@ -8,9 +8,10 @@ import * as Cards from './cards';
 
 const Cod = styled.div`
     top:10%;
-    left:4%;
+    left:9%;
+    rigtht:5%;
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 70vw;
     height: 70vh;
     padding: 5vh 5vw;
@@ -22,28 +23,57 @@ const Cod = styled.div`
     border-radius: 2px;
     box-shadow: 8px 8px 8px #a3b1c6, -8px -8px 8px rgba(255, 255, 255, 0.5), inset 1px 1px 1px #fff, inset -1px -1px 1px #a3b1c6;
     position:relative
+    
+   
 `
 const Wrap = styled.div`
     background-color: #f8f8f8;
-    height: 100vh;  
+    height: 100vh;
+    
+    display:flex;
+    justify-items: center;
+    align-content: center;
+    // align-items: center;
 `
 const H6=styled.h6`
     cursor: pointer; 
+    // left:1%;
+    
+    position:absolute;
     font-size: small;
     font-weight: 300;
     color:#26282a;
     font-family: 'Lato', sans-serif;
-    margin:0;
+    
     &:hover{
         color:#a8a7d1;
     }
 `
-const RC=styled.div`
+const RS=styled.div`
     float:right;
-    padding-top:2%;
-    padding-right:6%;
+    // padding-top:2%;
+    // padding-right:6%;
+    // background:green;
+    height: 70vh;
+    width: 48vw;
+    @media screen and (max-width: 489px) {
+        height: 60vh;
+        width: 70vw;
+              } 
 `
-
+const RC=styled.div`
+  height: 70vh;
+  width: 20vw;
+//   background: red;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center; 
+  @media screen and (max-width: 489px) {
+    height: 10vh;
+    width: 70vw;
+          }  
+`
 const Select = styled.select`
     padding:4px;
     outline:0px;
@@ -65,15 +95,18 @@ class OSsingleProjectSee extends React.Component{
     render(){
         return(
             <Wrap>
-                <NavLink style={{ float:'left', textDecoration: 'none', margin:'2%'}} to='/#opensource'><H6>Home</H6></NavLink>
+               <NavLink style={{ float:'left', marginBottom: '0px', textDecoration: 'none', marginLeft:'2%'}} to='/#opensource'><H6>Home</H6></NavLink>
+               
                 <Cod>
                     {/* <Codepen hash="KKpBvyo" height='600' user="talrodin" /> */}
                     <Fragment>
-                        <section> 
-                        <RC >
+                        <section>
+                        <RS >
                             {this.renderSelectedCard(this.state.selectedCardType)}
-                        </RC >  
+                        </RS > 
+                        <RC>
                             {this.renderCardSelector()}
+                        </RC>
                         </section>
                     </Fragment>
                 </Cod>
