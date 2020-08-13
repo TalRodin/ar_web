@@ -12,11 +12,15 @@ const backgroundImg = {
   width: '48vw',
   position: 'relative',
   zIndex: 1
+  
 };
 const D= styled.div` 
-  // width:autp;
+    
   // height: 100vh;
-
+  // @media screen and (max-width: 489px) {
+  //   height: 60vh;
+  //   width: 70vw;
+  //         } 
 `
 const A=styled.a`
     font-size: 18px;
