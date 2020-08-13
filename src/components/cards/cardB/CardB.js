@@ -8,8 +8,8 @@ const backgroundImg = {
   backgroundImage: `url(${img})`,
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
-  height: 360,
-  width:650,
+  height: '70vh',
+  width: '48vw',
   position: 'relative',
   zIndex: 1
 };

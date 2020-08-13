@@ -53,7 +53,7 @@ const RS=styled.div`
     float:right;
     // padding-top:2%;
     // padding-right:6%;
-    // background:green;
+    
     height: 70vh;
     width: 48vw;
     @media screen and (max-width: 489px) {
@@ -64,11 +64,10 @@ const RS=styled.div`
 const RC=styled.div`
   height: 70vh;
   width: 20vw;
-//   background: red;
   background-size: cover;
   display: flex;
   justify-content: center;
-  text-align: center; 
+//   text-align: center; 
   @media screen and (max-width: 489px) {
     height: 10vh;
     width: 70vw;
