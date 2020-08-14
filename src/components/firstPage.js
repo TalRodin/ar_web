@@ -8,6 +8,7 @@ const D = styled.div`
 const H1 = styled.h1`
 color:#414141;
 text-shadow: 1px 1px #fff;
+
 @media screen and (max-width: 489px) {
   font-size: 12px;
         } 
@@ -22,5 +23,6 @@ export default ({text}) => (
   <D>
     <H1>{text}</H1>
     <I src='circle.png' width='250px'  height='320px' border-radius='25px'/>
+    
   </D>
 );

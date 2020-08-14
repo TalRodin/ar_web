@@ -29,11 +29,9 @@ const Cod = styled.div`
 const Wrap = styled.div`
     background-color: #f8f8f8;
     height: 100vh;
-    
     display:flex;
     justify-items: center;
     align-content: center;
-    // align-items: center;
 `
 const H6=styled.h6`
     cursor: pointer; 
@@ -54,9 +52,6 @@ const H6=styled.h6`
 `
 const RS=styled.div`
     float:right;
-    // padding-top:2%;
-    // padding-right:6%;
-    
     height: 70vh;
     width: 48vw;
     @media screen and (max-width: 489px) {
@@ -70,7 +65,6 @@ const RC=styled.div`
   background-size: cover;
   display: flex;
   justify-content: center;
-//   text-align: center; 
   @media screen and (max-width: 489px) {
     height: 10vh;
     width: 70vw;
@@ -85,6 +79,11 @@ const Select = styled.select`
     width:13rem;
     border: 2px dotted #26282a;
     border-radius:16px;
+    @media screen and (max-width: 489px) {
+        width:4rem;
+        padding:8px;
+        border-radius:20px;
+              }
 `
 
 
@@ -118,7 +117,7 @@ class OSsingleProjectSee extends React.Component{
 
     renderCardSelector() {
         return (
-            <div style={{}}>
+            <div>
             <label style={{textAlign: 'center', width: '100%'}}></label>
             <Select style={{transform: 'translateZ(0)', filter:'drop-shadow(0px 10px 5px black)'}}
               onChange={(e) => this.setState({ selectedCardType: e.target.value })}>
