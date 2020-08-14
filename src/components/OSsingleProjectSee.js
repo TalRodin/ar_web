@@ -37,17 +37,20 @@ const Wrap = styled.div`
 `
 const H6=styled.h6`
     cursor: pointer; 
-    // left:1%;
-    
     position:absolute;
     font-size: small;
     font-weight: 300;
     color:#26282a;
+    text-decoration: 'none';
     font-family: 'Lato', sans-serif;
-    
+    margin-left:2%;
     &:hover{
         color:#a8a7d1;
     }
+    @media screen and (max-width: 489px) {
+        left: 50%;
+        transform: translate(-50%, -50%);
+              } 
 `
 const RS=styled.div`
     float:right;
@@ -94,7 +97,7 @@ class OSsingleProjectSee extends React.Component{
     render(){
         return(
             <Wrap>
-               <NavLink style={{ float:'left', marginBottom: '0px', textDecoration: 'none', marginLeft:'2%'}} to='/#opensource'><H6>Home</H6></NavLink>
+               <NavLink  to='/#opensource'><H6>Home</H6></NavLink>
                
                 <Cod>
                     {/* <Codepen hash="KKpBvyo" height='600' user="talrodin" /> */}
@@ -116,7 +119,7 @@ class OSsingleProjectSee extends React.Component{
     renderCardSelector() {
         return (
             <div style={{}}>
-            <label style={{textAlign: 'center',width: '100%'}}></label>
+            <label style={{textAlign: 'center', width: '100%'}}></label>
             <Select style={{transform: 'translateZ(0)', filter:'drop-shadow(0px 10px 5px black)'}}
               onChange={(e) => this.setState({ selectedCardType: e.target.value })}>
               <option></option>
