@@ -30,6 +30,15 @@ const Card = styled.div`
         border-radius: 10px;
         box-shadow: 8px 8px 8px #a3b1c6, -8px -8px 8px rgba(255, 255, 255, 0.5), inset 1px 1px 1px #fff, inset -1px -1px 1px #a3b1c6;
         marging-top:10px;
+        @media screen and (max-width: 489px) {
+            grid-template-columns: 1fr ;
+            height: 50vh;
+            width: 70vw;
+            border:none;
+            border-top:10px solid rgba(235,236,240,0.9);
+            border-right:none;
+            border-bottom:none;
+                  } 
 `
 const P = styled.p`
     line-height: normal;
@@ -39,7 +48,9 @@ const P = styled.p`
     color:#414141;
     font-size: 14px;
     text-shadow: 1px 1px #fff;
- 
+    @media screen and (max-width: 489px) {
+        font-size: 12px;
+              } 
 `
 const Size=styled.div`
     background-color:#fbfbfb;
@@ -60,13 +71,20 @@ const D=styled.div`
 const I = styled.img`
       width:200px;
       height:200px;
-    //   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
       filter: grayscale(80%);
+      @media screen and (max-width: 489px) {
+        width: 70vw;
+        height: 30vh;
+              }
 `
 const C =styled.div`
-      width:201px;
-      height:201px;
+    //   width:201px;
+    //   height:201px;
     //   border: 0.5px solid #f2f3f6;
+    // @media screen and (max-width: 489px) {
+    //     width: 0px;
+    //     width: 0px;
+    //           }
 `
 class SingleProject extends React.Component{
     constructor(){

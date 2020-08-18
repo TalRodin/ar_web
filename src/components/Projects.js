@@ -10,21 +10,39 @@ const Wrap = style.div`
   background: #fbfbfb;
   height: 100vh;
   padding-bottom: 10px;
+  @media screen and (max-width: 489px) {
+    display: flex;
+  justify-content: center;
+    padding-top:15px;
+          } 
+
 `
 const L=styled.div`  
-  cursor: pointer; 
-  font-size: small;
-  font-weight: 300;
-  color:#26282a;
-  font-family: 'Lato', sans-serif;
-  margin:0%;
-
+    font-size: small;
+    font-weight: 300;
+    color:#26282a;
+    text-decoration: 'none';
+    font-family: 'Lato', sans-serif;
+    margin-left:2%;
+    &:hover{
+        color:#a8a7d1;
+    }
+      position:absolute;
+      top:30px;
+      @media screen and (max-width: 489px) {
+        left: 50%;
+        transform: translate(-50%, -50%);
+              } 
 `
 const Grid=styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr ;
   justify-content: space-around;
   align-items: center;
+  @media screen and (max-width: 489px) {
+    grid-template-columns: 1fr ;
+    padding-top: 10px;
+          } 
 `
 
 class Projects extends React.Component{
