@@ -105,7 +105,26 @@ const Img = styled.img`
         height:40%;
               }   
 `
-
+const T1=styled.div`
+      top:1500px;
+      left:400px;
+      position:absolute;
+      width: 37.6px;
+      height: 32px;
+      background: #a8a7d1;
+      clip-path: polygon(50% 0, 0 100%, 100% 100%);
+      transform:rotate(50deg);
+`
+const Inner1 = styled.div`
+      top:1500px;
+      left:401.5px;
+      position:absolute;
+      width: 34.6px;
+      height: 31.5px;
+      background: #f8f8f8;
+      clip-path: polygon(50% 0, 0 100%, 100% 100%);
+      transform:rotate(50deg);
+`
 
 class Articles extends React.Component{
   constructor(props) {
@@ -137,6 +156,8 @@ class Articles extends React.Component{
     };
     return (
       <Wrap id='articles'>
+         <T1 ></T1 >
+      <Inner1></Inner1>
             <Box>
             <Container  >
             <Slider {...settings} >

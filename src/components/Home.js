@@ -45,41 +45,74 @@ const H1=styled.h1`
       }
 `
 
-const T1=styled.img`
+const T1=styled.div`
       top:40px;
-      left:750px;
-      width:10px;
-      height:10px;
+      left:50px;
       position:absolute;
-      @media screen and ${device.tablet} {
-            left:150px;
-       }
-      @media screen and (max-width: 489px) {
-            left:70px;
-            }   
+      width: 17.6px;
+      height: 12px;
+      background: #a8a7d1;
+      clip-path: polygon(50% 0, 0 100%, 100% 100%);
+      transform:rotate(50deg);
 `
-const T2=styled.img`
-      top:140px;
-      left:100px;
-      width:10px;
-      height:10px;
+const Inner1 = styled.div`
+      top:40.0px;
+      left:51.5px;
       position:absolute;
+      width: 14.6px;
+      height: 11.5px;
+      background: #f8f8f8;
+      clip-path: polygon(50% 0, 0 100%, 100% 100%);
+      transform:rotate(50deg);
 `
 
-const T3=styled.img`
-      top:150px;
-      left:1200px;
-      width:10px;
-      height:10px;
+const T2=styled.div`
+      top:500px;
+      left:410px;
       position:absolute;
-      @media screen and ${device.tablet} {
-            left:200px;
-       }
-      
+      width: 28px;
+      height: 22px;
+      background: #a8a7d1;
+      clip-path: polygon(50% 0, 0 100%, 100% 100%);
+      transform:rotate(10deg);
 `
+const Inner2 = styled.div`
+      top:500px;
+      left:411.5px;
+      position:absolute;
+      width: 24px;
+      height: 21px;
+      background: #f8f8f8;
+      clip-path: polygon(50% 0, 0 100%, 100% 100%);
+      transform:rotate(10deg);
+`
+
+const T3=styled.div`
+      top:200px;
+      left:1110px;
+      position:absolute;
+      width: 28px;
+      height: 22px;
+      background: #a8a7d1;
+      clip-path: polygon(50% 0, 0 100%, 100% 100%);
+      transform:rotate(10deg);
+`
+const Inner3 = styled.div`
+      top:200px;
+      left:1111.5px;
+      position:absolute;
+      width: 24px;
+      height: 21px;
+      background: #f8f8f8;
+      clip-path: polygon(50% 0, 0 100%, 100% 100%);
+      transform:rotate(10deg);
+`
+
+
+
 const T4=styled.img`
       top:160px;
-      left:400px;
+      left:900px;
       width:30px;
       height:30px;
       position:absolute;
@@ -483,14 +516,20 @@ class Home extends React.Component {
     return (
       <Wrap id='home'>
       <H1 >Alyona Rodina </H1>
-      <Dot1 src='dot.png'/>
+      {/* <Dot1 src='dot.png'/>
       <W1 src='wave.png'/>
       <Dot2 src='dot.png'/>
       <Duga2 src='duga.png'/>
       <W2 src='wave.png'/>
-      <Dot3 src='dot.png'/>
-      <T1  src='x.png'/>
-      <Dot4 src='dot.png'/>
+      <Dot3 src='dot.png'/> */}
+      {/* <T1  src='x.png'/> */}
+      <T1 ></T1 >
+      <Inner1></Inner1>
+      <T2 ></T2 >
+      <Inner2></Inner2>
+      <T3 ></T3>
+      <Inner3></Inner3>
+      {/* <Dot4 src='dot.png'/>
       <Duga1 src='duga.png'/>
       <Dot5 src='dot.png'/>
       <T2 src='x.png'/>
@@ -498,8 +537,8 @@ class Home extends React.Component {
       <Dot6 src='dot.png'/>
       <W src='wave.png'/>
       <Dot7 src='dot.png'/>
-      <Dot8 src='dot.png'/>
-      <T5 src='triangle.png'/>
+      <Dot8 src='dot.png'/> */}
+      {/* <T5 src='triangle.png'/>
       <T3 src='x.png'/>
       <Dot9 src='dot.png'/>
       <Duga src='duga.png'/>
@@ -520,7 +559,7 @@ class Home extends React.Component {
       <W4 src='wave.png'/>
       <X5 src='x.png'/>
       <Duga5 src='duga.png'/>
-      <Tri3 src='triangle.png'/>
+      <Tri3 src='triangle.png'/> */}
       </Wrap>
     );
   }

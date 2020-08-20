@@ -111,7 +111,26 @@ const Item= styled.div`
   }
 `
 
-
+const T1=styled.div`
+      top:2500px;
+      left:1250px;
+      position:absolute;
+      width: 37.6px;
+      height: 32px;
+      background: #a8a7d1;
+      clip-path: polygon(50% 0, 0 100%, 100% 100%);
+      
+`
+const Inner1 = styled.div`
+      top:2500px;
+      left:1251.5px;
+      position:absolute;
+      width: 34.6px;
+      height: 31.5px;
+      background: #f8f8f8;
+      clip-path: polygon(50% 0, 0 100%, 100% 100%);
+      
+`
 
 
 const LinkToProjects=() =>{
@@ -119,6 +138,8 @@ const LinkToProjects=() =>{
   return (
 
     <Wrap id='projects' >
+        <T1 ></T1 >
+      <Inner1></Inner1>
      <Box>
      <L>
       Projects

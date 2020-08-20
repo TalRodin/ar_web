@@ -64,10 +64,54 @@ const Hr = styled.hr`
     background-color: #6d5dfc;
     border: none;
 `
+const T1=styled.div`
+      top:1000px;
+      left:50px;
+      position:absolute;
+      width: 17.6px;
+      height: 12px;
+      background: #a8a7d1;
+      clip-path: polygon(50% 0, 0 100%, 100% 100%);
+      transform:rotate(50deg);
+`
+const Inner1 = styled.div`
+      top:1000px;
+      left:51.5px;
+      position:absolute;
+      width: 14.6px;
+      height: 11.5px;
+      background: #f8f8f8;
+      clip-path: polygon(50% 0, 0 100%, 100% 100%);
+      transform:rotate(50deg);
+`
+const T2=styled.div`
+      top:1100px;
+      left:1250px;
+      position:absolute;
+      width: 28px;
+      height: 22px;
+      background: #a8a7d1;
+      clip-path: polygon(50% 0, 0 100%, 100% 100%);
+   
+`
+const Inner2 = styled.div`
+      top:1100px;
+      left:1251.5px;
+      position:absolute;
+      width: 24px;
+      height: 21px;
+      background: #f8f8f8;
+      clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    
+`
 function About() {
   return (
     <div id = 'about' >
     <Wrap >
+      <T1 ></T1 >
+      <Inner1></Inner1>
+      <T2 ></T2 >
+      <Inner2></Inner2>
       <Box>
         <H7>About</H7>
         <Hr/>
